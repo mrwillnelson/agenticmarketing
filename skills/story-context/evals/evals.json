@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "name": "missing pack directory reports empty status",
+      "script": "scripts/check-pack.mjs",
+      "args": ["$TMP/nopack"],
+      "expectExit": 0,
+      "expectContains": ["PACK: missing", "STATUS: empty", "NEXT: run voice-pack"]
+    },
+    {
+      "name": "fully filled pack reports ready",
+      "script": "scripts/check-pack.mjs",
+      "args": ["$TMP/pack"],
+      "files": {
+        "pack/voice-model.md": "# Voice model\n\nMedian post 140 words. Short declaratives, one question per post at most.\n",
+        "pack/anti-patterns.md": "# Anti-patterns\n\nNo listicles. No engagement bait closers.\n",
+        "pack/lexicon.md": "# Lexicon\n\nSays \"customers\", never \"users\". Says \"shipped\", never \"launched\".\n",
+        "pack/hooks.md": "# Hooks\n\nOpens mid-story or with a number the reader can check.\n",
+        "pack/pillars.md": "# Pillars\n\n1. Building in public\n2. Hiring lessons\n",
+        "pack/narrative.md": "# Narrative\n\nBootstrapped after a layoff, now at 40 customers.\n",
+        "pack/icp.md": "# ICP\n\nSeed-stage technical founders selling to other developers.\n",
+        "pack/examples/sample-post.md": "# Sample\n\nThe week our biggest customer almost left.\n"
+      },
+      "expectExit": 0,
+      "expectContains": ["voice-model.md: present", "icp.md: present", "examples/: 1 file(s)", "STATUS: ready"]
+    },
+    {
+      "name": "partially filled pack reports partial and names the gaps",
+      "script": "scripts/check-pack.mjs",
+      "args": ["$TMP/pack"],
+      "files": {
+        "pack/voice-model.md": "# Voice model\n\nMedian post 140 words.\n",
+        "pack/pillars.md": "# Pillars\n\n1. Building in public\n",
+        "pack/lexicon.md": ""
+      },
+      "expectExit": 0,
+      "expectContains": ["voice-model.md: present", "lexicon.md: empty", "anti-patterns.md: missing", "STATUS: partial", "NEXT: run voice-pack to fill the gaps"]
+    }
+  ]
+}

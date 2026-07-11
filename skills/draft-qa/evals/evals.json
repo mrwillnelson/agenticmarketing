@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "name": "draft inside the target range passes, heading excluded from count",
+      "script": "scripts/check-length.mjs",
+      "args": ["$TMP/draft.md", "--min", "30", "--max", "60"],
+      "files": {
+        "draft.md": "# Working title\n\nThe first customer who churned taught me more than the first ten who signed. She left a two-line note explaining exactly where the product lost her, and that note became our roadmap for the next quarter.\n"
+      },
+      "expectExit": 0,
+      "expectContains": ["PASS: 36 words", "(target 30 to 60)"]
+    },
+    {
+      "name": "draft under the minimum fails with a shortfall note",
+      "script": "scripts/check-length.mjs",
+      "args": ["$TMP/draft.md", "--min", "100", "--max", "200"],
+      "files": {
+        "draft.md": "# Working title\n\nThe first customer who churned taught me more than the first ten who signed. She left a two-line note explaining exactly where the product lost her, and that note became our roadmap for the next quarter.\n"
+      },
+      "expectExit": 1,
+      "expectContains": ["FAIL:", "(target 100 to 200)", "Short by"]
+    },
+    {
+      "name": "platform default band works over stdin",
+      "script": "scripts/check-length.mjs",
+      "args": ["--platform", "x"],
+      "stdin": "Shipping beats planning. We proved it again this quarter with the fastest release in company history.\n",
+      "expectExit": 0,
+      "expectContains": ["PASS:", "(target 15 to 60)"]
+    },
+    {
+      "name": "unknown platform exits 2 with the known list",
+      "script": "scripts/check-length.mjs",
+      "args": ["--platform", "myspace"],
+      "stdin": "irrelevant\n",
+      "expectExit": 2,
+      "expectContains": ["Unknown platform", "linkedin"]
+    }
+  ]
+}

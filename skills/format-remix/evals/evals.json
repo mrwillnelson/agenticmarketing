@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "name": "remix that copies wording and hook words fails",
+      "script": "scripts/check-overlap.mjs",
+      "args": ["$TMP/original.md", "$TMP/remix.md"],
+      "files": {
+        "original.md": "The pricing page rewrite doubled our demo requests.\n\nWe cut nine features from the page and led with a single number. Prospects stopped asking what the product actually did.\n",
+        "remix.md": "Our pricing page was quietly killing demos.\n\nAfter the rewrite we doubled our demo requests in two weeks. The lesson was obvious in hindsight.\n"
+      },
+      "expectExit": 1,
+      "expectContains": ["FAIL:", "consecutive words", "doubled our demo requests", "hooks share content word(s)", "pricing"]
+    },
+    {
+      "name": "structure-only remix with fresh wording passes",
+      "script": "scripts/check-overlap.mjs",
+      "args": ["$TMP/original.md", "$TMP/remix.md"],
+      "files": {
+        "original.md": "The pricing page rewrite doubled our demo requests.\n\nWe cut nine features from the page and led with a single number. Prospects stopped asking what the product actually did.\n",
+        "remix.md": "Nobody opened our onboarding emails until I deleted six of them.\n\nOne message, one action, sent the morning after signup. Support tickets about setup dropped by half.\n"
+      },
+      "expectExit": 0,
+      "expectContains": ["OK: no shared phrase of 4+ words", "Still read the remix cold"]
+    },
+    {
+      "name": "missing remix path exits 2 with usage",
+      "script": "scripts/check-overlap.mjs",
+      "args": ["$TMP/original.md"],
+      "files": {
+        "original.md": "A one-line original.\n"
+      },
+      "expectExit": 2,
+      "expectContains": ["Usage: node check-overlap.mjs"]
+    }
+  ]
+}

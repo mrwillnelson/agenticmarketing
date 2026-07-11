@@ -1,0 +1,32 @@
+{
+  "cases": [
+    {
+      "name": "nine labeled posts produce weights, small buckets marked not enough data",
+      "script": "scripts/compute-weights.mjs",
+      "args": ["$TMP/posts.csv"],
+      "files": {
+        "posts.csv": "date,hook,pillar,format,length,impressions,reactions,comments\n2025-01-06,confession,building,text,140,4200,80,12\n2025-01-13,number-led,building,text,90,9800,150,30\n2025-01-20,contrarian,hiring,text,210,5100,90,14\n2025-01-27,confession,hiring,carousel,70,2600,40,6\n2025-02-03,number-led,building,text,120,12400,210,45\n2025-02-10,contrarian,building,video,60,3900,66,9\n2025-02-17,confession,hiring,text,180,5600,95,17\n2025-02-24,number-led,hiring,carousel,110,8700,140,22\n2025-03-03,contrarian,building,text,95,4700,72,11\n"
+      },
+      "expectExit": 0,
+      "expectContains": ["Posts: 9", "Metric: impressions", "Median: 5100", "Hooks:", "number-led", "(3 posts)", "not enough data", "Outliers above 1.5x median:", "Weights are ratios to YOUR median"]
+    },
+    {
+      "name": "falls back to reactions plus comments when impressions are missing",
+      "script": "scripts/compute-weights.mjs",
+      "args": [],
+      "stdin": "date,hook,pillar,format,length,impressions,reactions,comments\n2025-01-06,confession,building,text,140,,80,12\n2025-01-13,number-led,building,text,90,,150,30\n2025-01-20,contrarian,hiring,text,210,,90,14\n2025-01-27,confession,hiring,carousel,70,,40,6\n2025-02-03,number-led,building,text,120,,210,45\n2025-02-10,contrarian,building,video,60,,66,9\n2025-02-17,confession,hiring,text,180,,95,17\n2025-02-24,number-led,hiring,carousel,110,,140,22\n2025-03-03,contrarian,building,text,95,,72,11\n",
+      "expectExit": 0,
+      "expectContains": ["Posts: 9", "Metric: reactions + comments", "Hooks:", "Pillars:"]
+    },
+    {
+      "name": "refuses to emit weights below the minimum sample",
+      "script": "scripts/compute-weights.mjs",
+      "args": ["$TMP/posts.csv"],
+      "files": {
+        "posts.csv": "date,hook,pillar,format,length,impressions,reactions,comments\n2025-01-06,confession,building,text,140,4200,80,12\n2025-01-13,number-led,building,text,90,9800,150,30\n2025-01-20,contrarian,hiring,text,210,5100,90,14\n"
+      },
+      "expectExit": 1,
+      "expectContains": ["Only 3 scorable posts; need at least 8"]
+    }
+  ]
+}

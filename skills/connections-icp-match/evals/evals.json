@@ -1,0 +1,44 @@
+{
+  "cases": [
+    {
+      "name": "summary handles preamble notes, quoted commas, and empty fields",
+      "script": "scripts/parse-connections.mjs",
+      "args": ["$TMP/Connections.csv"],
+      "files": {
+        "Connections.csv": "Notes:\n\"When exporting your connection data, you may notice that some fields are missing. This note line contains commas, quotes, and other things the parser must survive.\"\n\nFirst Name,Last Name,URL,Email Address,Company,Position,Connected On\nMaya,Lindqvist,https://www.linkedin.com/in/maya-lindqvist,,\"Fjord Analytics, Inc.\",Founder and CEO,12 Mar 2024\nRavi,Anand,https://www.linkedin.com/in/ravi-anand,ravi@example.com,Copperline Labs,VP of Engineering,03 Jan 2023\nDana,Okafor,https://www.linkedin.com/in/dana-okafor,,,,28 Nov 2022\nJonas,Meyer,https://www.linkedin.com/in/jonas-meyer,,Meyer Consulting,Fractional CFO,15 Jun 2025\n"
+      },
+      "expectExit": 0,
+      "expectContains": ["Contacts: 4", "With company: 3", "Without position: 1", "Connected between: 2022-11-28 and 2025-06-15"]
+    },
+    {
+      "name": "--json emits normalized contacts with parsed dates and quoted company intact",
+      "script": "scripts/parse-connections.mjs",
+      "args": ["$TMP/Connections.csv", "--json"],
+      "files": {
+        "Connections.csv": "Notes:\n\"When exporting your connection data, you may notice that some fields are missing. This note line contains commas, quotes, and other things the parser must survive.\"\n\nFirst Name,Last Name,URL,Email Address,Company,Position,Connected On\nMaya,Lindqvist,https://www.linkedin.com/in/maya-lindqvist,,\"Fjord Analytics, Inc.\",Founder and CEO,12 Mar 2024\nRavi,Anand,https://www.linkedin.com/in/ravi-anand,ravi@example.com,Copperline Labs,VP of Engineering,03 Jan 2023\n"
+      },
+      "expectExit": 0,
+      "expectContains": ["\"firstName\": \"Maya\"", "\"company\": \"Fjord Analytics, Inc.\"", "\"connectedOnISO\": \"2024-03-12\"", "\"position\": \"VP of Engineering\""]
+    },
+    {
+      "name": "--keywords filters positions case-insensitively",
+      "script": "scripts/parse-connections.mjs",
+      "args": ["$TMP/Connections.csv", "--keywords", "founder,cfo"],
+      "files": {
+        "Connections.csv": "Notes:\n\"Some email addresses may be missing, per your connections' settings.\"\n\nFirst Name,Last Name,URL,Email Address,Company,Position,Connected On\nMaya,Lindqvist,https://www.linkedin.com/in/maya-lindqvist,,\"Fjord Analytics, Inc.\",Founder and CEO,12 Mar 2024\nRavi,Anand,https://www.linkedin.com/in/ravi-anand,ravi@example.com,Copperline Labs,VP of Engineering,03 Jan 2023\nJonas,Meyer,https://www.linkedin.com/in/jonas-meyer,,Meyer Consulting,Fractional CFO,15 Jun 2025\n"
+      },
+      "expectExit": 0,
+      "expectContains": ["Contacts: 2 (of 3, filtered by: founder, cfo)"]
+    },
+    {
+      "name": "file without a LinkedIn header row exits 1",
+      "script": "scripts/parse-connections.mjs",
+      "args": ["$TMP/random.csv"],
+      "files": {
+        "random.csv": "name,city\nSomeone,Lisbon\n"
+      },
+      "expectExit": 1,
+      "expectContains": ["No header row found"]
+    }
+  ]
+}

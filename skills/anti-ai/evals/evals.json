@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "name": "draft full of AI tells flags bans and exits 1",
+      "script": "scripts/scan.mjs",
+      "args": ["$TMP/draft.md"],
+      "files": {
+        "draft.md": "Here's the thing about churn. Most founders track the wrong number. Let's delve into the data.\n\nWhat do you think?\n"
+      },
+      "expectExit": 1,
+      "expectContains": ["[ban] Banned phrase", "[ban] Banned word", "delve", "Engagement bait", "FAIL: rewrite every ban"]
+    },
+    {
+      "name": "clean draft via stdin passes with a clean scan",
+      "script": "scripts/scan.mjs",
+      "args": [],
+      "stdin": "I shipped the billing rewrite on a Tuesday. Two customers emailed within an hour because their invoices finally matched their usage. That bug had survived three quarters of triage without anyone owning it.\n",
+      "expectExit": 0,
+      "expectContains": ["summary: 0 ban", "PASS: clean scan"]
+    },
+    {
+      "name": "exemptions file downgrades engagement bait to a note",
+      "script": "scripts/scan.mjs",
+      "args": ["$TMP/draft.md", "--exemptions", "$TMP/anti-patterns.md"],
+      "files": {
+        "draft.md": "We doubled trial conversions after cutting the demo video from onboarding.\n\nWhat do you think?\n",
+        "anti-patterns.md": "# Anti-patterns\n\nThe author ends posts with a direct question on purpose.\n\nallowEngagementBait: true\n"
+      },
+      "expectExit": 0,
+      "expectContains": ["exemptions: allowEngagementBait", "[note] Engagement bait", "Exempted by your pack", "PASS"]
+    },
+    {
+      "name": "missing file exits 2 with a read error",
+      "script": "scripts/scan.mjs",
+      "args": ["$TMP/does-not-exist.md"],
+      "expectExit": 2,
+      "expectContains": ["scan: cannot read"]
+    }
+  ]
+}
