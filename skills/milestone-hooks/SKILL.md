@@ -62,6 +62,8 @@ Bad: "We just crossed 10,000 users. So grateful for this incredible journey!"
 Better: "9,000 of our first 10,000 users came through an integration we almost cut from the roadmap twice."
 Why: the bad one shows a number and asks for applause; the better one opens the mechanism behind the number and leaves the near-miss unexplained.
 
+Real worked examples with real numbers: see [references/receipts.md](references/receipts.md).
+
 ## Self-check
 
 - Is the milestone absent from the first line and present only as the resolution?

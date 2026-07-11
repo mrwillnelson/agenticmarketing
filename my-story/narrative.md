@@ -6,30 +6,37 @@ story-context (runs its narrative check against this file), milestone-hooks
 and one-recording-everything (keep their theses inside this arc).
 How to fill: run the voice-pack skill for a first draft, then resolve every
 [CONFIRM] tag yourself. This file is yours to state, not the model's to invent.
-Everything below is placeholder content from an invented founder,
-Maya Torres of Ledgerline. Replace all of it.
+The worked example below is real data from a real founder: Will Nelson,
+founder of 64stories.com. Replace it with yours by running voice-pack.
 -->
 
 # Narrative
 
 ## Positioning
 
-Ledgerline is accounts-receivable automation for B2B companies between 50 and
-500 people. That is the stage where invoices outgrow the founder's memory but
-a real credit team is still years away.
+Will teaches founders and marketers how to market while they sleep. 64stories
+builds the Agentic Marketing System, which he runs on his own content and
+teaches in public. Underneath it sits one claim: your story is your strategy,
+made legible. A company whose leaders each tell a different story is drifting,
+and founder-led content is how the story gets told once, out loud, until
+everyone can repeat it back.
 
 ## The bet
 
-The change in the world we are betting on: finance teams stop treating
-collections as back-office admin and start treating receivables as a growth
-lever they own. When capital was cheap, slow payment was tolerable. It is not
-anymore, and the companies that get their cash back 20 days faster will outlast
-the ones that never look at the aging report.
+Four convictions every post serves:
+
+- Distribution is the business. Content that reaches the right people, measured
+  as target customer engagement, beats content that reaches many people.
+- Agents can run the machine, but only if the machine has taste. Skills, voice,
+  and judgment are the human's job; anti-AI-slop discipline is still the moat.
+- Give away the secrets, sell the implementation. Every post teaches something
+  real; lead magnets and live sessions deepen it; the Agentic Marketing System implements it.
+- Authority comes from running the machine in public, not describing it.
+  Real numbers from Will's own distribution engine beat takes.
 
 ## What the posts must add up to
 
-A reader who follows Maya for six months should come to believe two things.
-First, that DSO is a leading indicator of company health, not an accounting
-detail. Second, that Maya has looked at more real AR data than anyone else
-posting about it. Every post either shows the data or shows the scar.
-A post that does neither does not ship, however clever it reads.
+A founder or marketer should finish any post believing they could market while
+they sleep, and knowing one concrete step toward it. Posts feed the funnel:
+post, then lead magnet, then live session or webinar, then the Agentic Marketing System.
+Founder-led content is not a branding exercise here; it is pipeline.

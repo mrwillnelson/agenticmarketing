@@ -76,6 +76,8 @@ Bad edit: rewriting the user's "Which was dumb. But it worked." into "That decis
 Better: leave the fragment alone.
 Why: the fragment is a signature move exempted in `anti-patterns.md`; smoothing it satisfies a grammar rule and erases the person.
 
+Real worked examples with real numbers: see [references/receipts.md](references/receipts.md).
+
 ## Self-check
 
 - Did the approved pieces, not the guide, set the fingerprint, and did I verify any claimed numbers against them?

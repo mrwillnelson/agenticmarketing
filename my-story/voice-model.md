@@ -6,33 +6,39 @@ hooks and short-form-script (rhythm of openers and spoken lines), newsletter,
 and story-context (loads it before any writing task).
 How to fill: run the voice-pack skill on 10 to 30 of your approved posts.
 It measures every number below with scripts/fingerprint.mjs. Do not hand-estimate.
-Everything below is placeholder content from an invented founder,
-Maya Torres of Ledgerline (B2B accounts-receivable automation). Replace all of it.
+The worked example below is real data from a real founder: Will Nelson,
+founder of 64stories.com. Replace it with yours by running voice-pack.
 -->
 
 # Voice model
 
 ## Measured fingerprint
 
-Measured 2026-07-09 with fingerprint.mjs across 18 approved posts.
+Measured from 33 approved posts with fingerprint.mjs.
 
-- Post length: median 96 words, range 34 to 412.
-- Average sentence length: median 13 words.
-- Sentence mix: 28% short (8 words or fewer), 51% medium, 21% long (20 words or more).
-- Sentences per paragraph: median 1.6. Two-line paragraphs dominate; nothing over 4 sentences.
-- Contractions: 4.2 per 100 words. "I'd", "wasn't", and "doesn't" appear constantly; "cannot" never does.
-- Person: first person singular in 16 of 18 posts. "We" only when a named teammate did the work.
-- Questions: 0.3 per post, always a real question to a real reader, never rhetorical.
+- Post length: median 79 words, range 18 to 2,410. The set spans two-line quips
+  and a full newsletter breakdown, so length is genuinely unbounded in both directions.
+- Average sentence length: median 18 words, unusually long for LinkedIn.
+  Sentences carry reasoning; they run long when the reasoning needs room.
+- Sentence mix: long sentences (29%) outnumber short ones (25%). That is rare in
+  founder content and part of why the posts read unpolished rather than punchy.
+- Contractions: 1.8 per 100 words.
+- Sentences per paragraph: median 0.6. Most paragraphs are a single line,
+  a fragment, or a list item. White space and line breaks are part of the voice.
+- Person: I/we throughout. Will writes from inside the work, not above it.
+- No exclamation points. No rhetorical questions.
 
 ## Register
 
-An operator explaining money to other operators. Plain finance vocabulary, no cleverness.
-Maya writes like she is reading a number off the aging report and telling you why it scared her.
-Evidence: "Our DSO hit 61 days in March and I did not sleep well that month."
+An operator talking to founders and marketers with conviction and without polish.
+Plain founder language, named companies, full names, real numbers. Never
+"significant results" or "strong performance". The goal of a post is to trigger
+emotion, not collect agreement.
+Evidence: "Your story is your strategy, made legible." (post 2026-02-26)
 
 ## Signature moves
 
-- Opens with the number, then the feeling. Never the reverse.
-- Names the exact artifact. "The aging report", "the Tuesday dunning email", "row 214 of the AR sheet".
-- Ends one beat early, on a concrete consequence, never on advice.
-- Prices her own mistakes in dollars or days, not adjectives.
+- Opens with the most important sentence, never setup. If the first line is context, cut it.
+- Deliberately imperfect rhythm. No perfect symmetry; if a post reads symmetrically, break it.
+- Grounds claims in real work: an exact impression count, a named company, a process step.
+- Endings stop a beat early, on what happened, not on advice or a neat landing.

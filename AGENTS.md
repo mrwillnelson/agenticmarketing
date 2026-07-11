@@ -8,6 +8,7 @@ This repository contains agent skills for founder content work, organized as Lis
 |---|---|
 | Any writing task in this system | Load `skills/story-context` first |
 | Set up or refresh the user's voice pack | `skills/voice-pack` |
+| Evolve the pack from the user's edits and performance | `skills/improve-my-pack` |
 | Write a new skill for this repo | `skills/skill-author` |
 
 ## Listening
@@ -15,13 +16,18 @@ This repository contains agent skills for founder content work, organized as Lis
 | Job | Skill |
 |---|---|
 | Find post ideas in a transcript | `skills/transcript-ideas` |
+| Find patterns across many transcripts over time | `skills/cross-transcript-synthesis` |
 | Find clip-worthy timestamps in a recording | `skills/clip-finder` |
+| Analyze top posts from the user's niche | `skills/outlier-analysis` |
 
 ## Narrative
 
 | Job | Skill |
 |---|---|
+| Write a content brief before drafting | `skills/brief-writer` |
+| Turn one call into one post, same day | `skills/meeting-to-post` |
 | Write or fix an opening line | `skills/hooks` (product news: `skills/milestone-hooks`) |
+| Place keywords in a long-form article without taxing it | `skills/linkedin-article-keywords` |
 | Write a LinkedIn post | `skills/linkedin-post` |
 | Write a short-form video script | `skills/short-form-script` |
 | Write a newsletter issue | `skills/newsletter` |
@@ -36,7 +42,9 @@ This repository contains agent skills for founder content work, organized as Lis
 | Job | Skill |
 |---|---|
 | Rank LinkedIn connections against the user's ICP | `skills/connections-icp-match` |
+| Turn post engagers into warm conversations | `skills/engagement-to-pipeline` |
 | Analyze what content performed | `skills/what-worked` |
+| Run the 90-day content teardown | `skills/content-audit` |
 
 ## The my-story pack
 

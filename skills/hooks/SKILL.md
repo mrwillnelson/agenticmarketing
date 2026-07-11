@@ -64,6 +64,8 @@ Bad: "Unlock better content ideas from your team."
 Better: "Your team already said the post. Nobody wrote it down."
 Why: the bad one is marketing copy; the better one is a recognition hit with a Me too trigger.
 
+Real worked examples with real numbers: see [references/receipts.md](references/receipts.md).
+
 ## Self-check
 
 - Which emotion does each finalist trigger, by name?

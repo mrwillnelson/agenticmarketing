@@ -73,6 +73,8 @@ Better rhythm:
 
 Why: the bad one is one breathless paragraph that dies at phone width; the better one gives each beat its own line and lets white space carry the turn.
 
+Real worked examples with real numbers: see [references/receipts.md](references/receipts.md).
+
 ## Self-check
 
 - Do the first ~210 characters work alone, before "...see more"?
