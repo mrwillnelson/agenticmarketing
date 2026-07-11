@@ -1,0 +1,14 @@
+{
+  "name": "64stories",
+  "owner": {
+    "name": "64stories",
+    "url": "https://64stories.co"
+  },
+  "plugins": [
+    {
+      "name": "agentic-marketing-skills",
+      "source": "./",
+      "description": "Founder content skills: hooks, transcript idea mining, LinkedIn posts, short-form scripts, newsletters, clip finding, anti-AI scanning, voice matching, and distribution."
+    }
+  ]
+}

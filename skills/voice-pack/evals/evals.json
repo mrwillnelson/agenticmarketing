@@ -1,0 +1,29 @@
+{
+  "cases": [
+    {
+      "name": "sample posts produce the full fingerprint report",
+      "script": "scripts/fingerprint.mjs",
+      "args": ["$TMP/post1.txt", "$TMP/post2.txt"],
+      "files": {
+        "post1.txt": "I didn't plan to become a founder. The company I worked for shut down our whole division on a Friday, and by Monday I had three customers asking if I could keep supporting them alone.\n\nSo I said yes. Was it reckless? Probably. But those three contracts paid my rent while I built the real product, and two of them are still customers today.\n",
+        "post2.txt": "You can't outsource taste. We tried twice, with two different agencies, and both times we got work that was polished and completely wrong.\n\nNow every landing page starts as a rough draft I write myself. It's slower. It also converts.\n"
+      },
+      "expectExit": 0,
+      "expectContains": ["Files measured: 2", "Post length (words per file)", "Sentence length distribution", "Sentences per paragraph", "Rates per 100 words", "contractions:", "first singular:", "Questions:"]
+    },
+    {
+      "name": "no arguments exits 1 with usage",
+      "script": "scripts/fingerprint.mjs",
+      "args": [],
+      "expectExit": 1,
+      "expectContains": ["Usage: node fingerprint.mjs"]
+    },
+    {
+      "name": "unreadable file exits 1 with the file named",
+      "script": "scripts/fingerprint.mjs",
+      "args": ["$TMP/missing.txt"],
+      "expectExit": 1,
+      "expectContains": ["Cannot read", "missing.txt"]
+    }
+  ]
+}

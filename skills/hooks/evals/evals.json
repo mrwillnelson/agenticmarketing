@@ -1,0 +1,32 @@
+{
+  "cases": [
+    {
+      "name": "linkedin hook that fits the fold passes",
+      "script": "scripts/check-fold.mjs",
+      "args": ["linkedin", "We deleted our biggest feature and activation went up."],
+      "expectExit": 0,
+      "expectContains": ["Platform: linkedin", "(fits)", "Fits the fold"]
+    },
+    {
+      "name": "linkedin hook over 210 chars fails with over-the-fold report",
+      "script": "scripts/check-fold.mjs",
+      "args": ["linkedin", "I spent nine months building a feature nobody asked for, and the day we finally deleted it from the roadmap our activation rate went up, our support queue got shorter, and the team shipped the next release two weeks early, which told me everything about focus."],
+      "expectExit": 1,
+      "expectContains": ["Platform: linkedin", "over the fold)", "Above the fold:", "Check: read only the visible part"]
+    },
+    {
+      "name": "video mode counts words and flags a hook past the 3-second mark",
+      "script": "scripts/check-fold.mjs",
+      "args": ["video", "The one hiring question that told me more than any resume ever did"],
+      "expectExit": 1,
+      "expectContains": ["Platform: video", "past the 3-second mark", "Above the fold:"]
+    },
+    {
+      "name": "unknown platform exits 2 with usage",
+      "script": "scripts/check-fold.mjs",
+      "args": ["tiktok", "Some hook text"],
+      "expectExit": 2,
+      "expectContains": ["Usage: node check-fold.mjs"]
+    }
+  ]
+}
