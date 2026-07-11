@@ -1,1 +1,1 @@
-# agenticmarketing
+# Agentic Marketing Skills
