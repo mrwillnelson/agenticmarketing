@@ -28,7 +28,7 @@ Or add as a Claude Code plugin, or clone and copy `skills/` into your project.
 
 Nothing to configure. Pick a path, paste one message into your agent.
 
-**Path A: measure your voice.**
+**Path A: learn your voice.**
 
 ```
 Use the voice-pack skill on these posts:
@@ -36,19 +36,17 @@ Use the voice-pack skill on these posts:
 [paste 10 to 30 of your LinkedIn posts]
 ```
 
-The skill measures how you actually write and builds your `my-story/` pack from the numbers. Here is a real fingerprint:
+The skill studies how you actually write and builds your `my-story/` pack. Then every writing skill drafts in your voice instead of the default AI register. Here is the same idea, written both ways:
 
-```
-Voice fingerprint: Will Nelson, Founder of 64stories.com, measured from his last 33 posts
+Generic AI:
 
-Median post length:      79 words
-Average sentence length: 18 words
-Contractions:            1.8 per 100 words
-Sentences per paragraph: 0.6 (most paragraphs are one line or a fragment)
-Exclamation points:      none
-```
+> Time and again, I've observed the same pattern. Founders don't struggle with storytelling because they're too technical. They struggle because they haven't done the hard work of deciding who they are, what they stand for, and what they're willing to say no to.
 
-Every writing skill in the repo now drafts inside those numbers instead of the default AI register.
+The voice pack, matching Will Nelson (Founder of 64stories.com) to his own posts:
+
+> I've seen this dozens of times. A founder struggles to tell their story. They blame it on being "too technical." But dig deeper and the real issue surfaces. They haven't made the hard decisions about what they are and what they're not.
+
+Same facts. The first has the tells: a "Time and again" wind-up, a staged reveal, a rule of three, sentences so even they hum. The second is the paragraph Will actually posted, on the way to 141 reactions. The pack holds a measured fingerprint of your rhythm so the skills can catch that drift, but the real work is matching your own writing, never hitting a statistic.
 
 **Path B: turn one call into a content set.**
 
@@ -125,6 +123,7 @@ Coming: posting cadence, lead-magnet CTA discipline. Demand here stays content-f
 - Skills ship scripts where the check is deterministic. Scanners are code, not vibes.
 - Script-bearing skills carry `evals/evals.json`: runnable cases CI executes on every change.
 - Every skill carries good and bad examples, because examples steer harder than rules.
+- Voice comes from your real posts, not a formula. The measured fingerprint is a floor that catches AI drift; your own writing sets the register. `voice-match` holds the rule: when the guide and the posts disagree, the posts win.
 - Flagship skills carry `references/receipts.md`: real posts by Will Nelson, Founder of 64stories.com, with real engagement numbers, dissected by the skill that teaches the craft.
 - New skills carry `references/bakeoff.md`: the same input run without and with the skill, side by side, so you can judge the difference yourself.
 - Every gate supports exemptions in `my-story/anti-patterns.md`, so it never sands off a real voice.
