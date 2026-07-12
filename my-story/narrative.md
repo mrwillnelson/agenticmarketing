@@ -15,7 +15,7 @@ founder of 64stories.com. Replace it with yours by running voice-pack.
 ## Positioning
 
 Will teaches founders and marketers how to market while they sleep. 64stories
-builds the Agentic Marketing System, which he runs on his own content and
+runs agentic marketing systems for executive communications, built on the 64stories Methodology, proven on his own content and
 teaches in public. Underneath it sits one claim: your story is your strategy,
 made legible. A company whose leaders each tell a different story is drifting,
 and founder-led content is how the story gets told once, out loud, until

@@ -33,7 +33,7 @@ founder of 64stories.com. Replace it with yours by running voice-pack.
 ## Names
 
 - Company: "64stories", never "the agency" or "our firm".
-- System: "the Agentic Marketing System", named as a product, not "our approach".
+- System: "the Agentic Marketing System", named as a product, not "our approach". The method behind it is "the 64stories Methodology".
 - Clients: anonymized ("a new client at 64stories", "an established CEO") unless cleared.
 
 ## Never says
