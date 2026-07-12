@@ -6,38 +6,43 @@ connections-icp-match (ranks LinkedIn connections against it), transcript-ideas
 How to fill: run the voice-pack skill for the skeleton, then answer its inline
 questions yourself. Never let a model fabricate this file; wrong targeting
 poisons every skill downstream.
-Everything below is placeholder content from an invented founder,
-Maya Torres of Ledgerline. Replace all of it.
+The worked example below is real data from a real founder: Will Nelson,
+founder of 64stories.com. [TO CONFIRM] marks fields Will still needs to state
+himself rather than let a model guess. Replace it all with yours.
 -->
 
 # ICP
 
 ## Titles and roles
 
-- Primary: Controller, VP Finance, Head of Finance.
-- Secondary: CFO at seed to Series B; founder still doing collections personally.
-- Influencer, not buyer: RevOps lead who feels the billing pain first.
+- Primary: B2B founders and CEOs who want their own voice to drive pipeline.
+- Secondary: VP Marketing or Head of Marketing at a founder-led B2B company,
+  tasked with making the founder's content actually work.
+- Influencer, not buyer: the content or social lead who runs the founder's
+  LinkedIn today and knows it is stalling.
 
 ## Company type and size
 
-B2B SaaS and services companies, 50 to 500 employees, roughly $5M to $80M
-revenue, invoice-based billing on net-30 or worse terms. US and UK first.
+B2B companies where the founder or CEO is the natural face of the story and
+LinkedIn is where their buyers are. Funded startup through growth stage.
+Exact employee and revenue bands: [TO CONFIRM]. Geography: [TO CONFIRM].
 
 ## Triggers and pain
 
-- DSO crossed 50 days, or the board asked about it by name.
-- The first finance hire just inherited a founder-built AR spreadsheet.
-- A large customer went 90+ days late and no process caught it.
-- Fundraising pushed cash runway math onto the CEO's desk this quarter.
+- Ask five leaders what the company does and you hear five different stories.
+- The founder's content is ghostwritten or generic, and the audience can tell.
+- Pipeline pressure after a raise; paid CAC climbing while organic sits idle.
+- A competitor's founder is loud on LinkedIn and it is visibly working.
+- The company posts constantly but nothing reaches actual buyers.
 
 ## Watering holes
 
-- LinkedIn finance posts and private CFO Slack communities.
-- Niche CFO and RevOps podcasts, not general startup shows.
-- ERP and billing marketplaces where they already shop for integrations.
+- LinkedIn, especially founder-led growth and B2B marketing conversations.
+- Communities, newsletters, and podcasts: [TO CONFIRM].
 
 ## Disqualifiers
 
-- Consumer or prepaid billing. Nothing to collect.
-- Under 20 employees. The founder's memory still works.
-- Enterprise with an existing credit and collections team on a legacy suite.
+- No founder willing to put in the time. The voice cannot be manufactured
+  without the person.
+- Content wanted as decoration, with no pipeline goal attached.
+- Consumer brands with no founder-as-face angle: [TO CONFIRM].

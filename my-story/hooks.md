@@ -5,36 +5,47 @@ Skills that read it: hooks and milestone-hooks (match the register and favored
 patterns of these lines), story-context (loads it with the rest of the pack).
 How to fill: run the voice-pack skill. It copies the first line of every approved
 post character for character and tags it. Add a line here whenever a post gets approved.
-Everything below is placeholder content from an invented founder,
-Maya Torres of Ledgerline. Replace all of it.
+The worked example below is real data from a real founder: Will Nelson,
+founder of 64stories.com, with real LinkedIn engagement. Replace it with yours.
 -->
 
 # Approved hooks
 
-## confession
+## observation
 
-- "I let a customer go 94 days past due because I liked him."
-- "We invoiced a client twice in March and only one of us noticed."
+- "Ask a founder about storytelling and they'll point you to their marketing team."
+  (141 reactions, 35 comments)
+- "The fastest way to tell a company is drifting." (51 reactions, 13 comments)
+
+## teardown
+
+- "This guy broke LinkedIn, so let's figure out what he did so you can copy it."
+  (117 reactions, 22 comments)
+- "I spent the last seven days breaking down how Notion's leadership used
+  storytelling to build a $10 Billion brand." (14 reactions, 15 comments)
 
 ## number-led
 
-- "$212,000 of our cash was sitting in other people's accounts payable queues."
-- "Our DSO hit 61 days in March and I did not sleep well that month."
+- "669,000 impressions in 28 days from founder content on LinkedIn"
+  (17 reactions, 3 comments)
+- "In the last 90 days, 64stories has grown an established CEO's LinkedIn account
+  by 500% by doing something really simple." (11 reactions, 2 comments)
 
-## contrarian
+## market-signal
 
-- "Your collections problem is a sales problem wearing a finance costume."
+- "A blog post just crashed the stock market and it wasn't even a real scenario."
+  (15 reactions, 1 comment)
+- "Kalshi just posted a $200k-$300k role for a "data-driven storyteller"."
+  (12 reactions, 1 comment)
 
-## mid-action
+## founder-pain
 
-- "It's 11pm and I'm rewriting a dunning email for the fourth time."
-
-## observation
-
-- "Every controller I meet keeps a secret spreadsheet their ERP knows nothing about."
+- "If decisions stall when you're not in the room, this will feel uncomfortably
+  familiar." (3 reactions, 1 comment)
 
 ## Pattern notes
 
-Number-led and confession dominate (12 of 18 posts between them). Maya has never
-opened with a question, a quote, or "Unpopular opinion". Contrarian openers work
-for her only when a real client number backs the claim inside the post.
+The two best performers name a pattern the reader already recognizes or frame a
+teardown as something to steal. Will has never opened with a rhetorical question,
+"Unpopular opinion", or a high-contrast toggle formula. Number-led openers state
+the client result flat, with no framing before the number.

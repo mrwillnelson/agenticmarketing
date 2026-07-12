@@ -67,6 +67,8 @@ Bad remix: "I fired our biggest client in March. They drove 40% of our revenue. 
 Better remix: "Last spring I turned down the contract that would have doubled us. The buyer wanted our roadmap rebuilt around one company. Saying yes meant spending a year building someone else's product. I told the team it was a close call. It was not, and pretending cost us two planning cycles. Revenue that requires becoming a different company is not growth. It is a rebrand."
 Why: the bad one swaps nouns and keeps the sentences (check-overlap flags three shared phrases and the hook); the better one keeps only the beat order and the engine, and passes clean.
 
+Real worked examples with real numbers: see [references/receipts.md](references/receipts.md).
+
 ## Self-check
 
 - Could this skeleton describe a hundred posts, or only the source?

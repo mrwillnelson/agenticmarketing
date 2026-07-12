@@ -5,36 +5,40 @@ Skills that read it: voice-match (vocabulary source and hard rejects), linkedin-
 newsletter, short-form-script (all swap industry synonyms for these terms), story-context.
 How to fill: run the voice-pack skill. It lists only terms with 3 or more corpus
 occurrences, and "never says" entries confirmed at 0 occurrences across your posts.
-Everything below is placeholder content from an invented founder,
-Maya Torres of Ledgerline. Replace all of it.
+The worked example below is real data from a real founder: Will Nelson,
+founder of 64stories.com. Replace it with yours by running voice-pack.
 -->
 
 # Lexicon
 
 ## Says
 
-- "the aging report" (11 of 18 posts). Never "AR aging analysis".
-- "chasing invoices" (9 of 18). Her verb for collections work.
-- "days late" as the unit of pain ("34 days late"). Never "past-due balance".
-- "finance folks" for her audience (6 of 18). Never "finance leaders".
-- "the money you already earned" for receivables (4 of 18).
+- "Story Engineering" for what 64stories does: crafting narratives, then validating
+  them with content experiments, tracked through to demand generation.
+- "narrative" and "story" as strategy words, not marketing words.
+  "Your story is your strategy, made legible."
+- "drifting" for a company whose leaders each tell a different story.
+- "founder-led" as the standing category ("everything founder-led growth").
+- "chief storyteller" for what the founder becomes as the company scales.
+- "rowing in unison" for narrative alignment: leaders "rowing a boat, together,
+  in unison, toward a single target", versus "rowing in different directions, going in circles".
+- "market while you sleep" for the promise of an agentic marketing system.
 
 ## Signature constructions
 
-- Number first, noun second: "61 days of DSO", "$48K sitting in net-60".
-- Physical verbs for money: invoices "sit" and "pile up", cash "lands", accounts "clear".
+- Result first, mechanism second: "669,000 impressions in 28 days", then how.
+- Process named as a chain: "Ideate > Capture > Create > Measure > Amplify".
+- Named companies as proof: Salesforce, Shopify, Amazon, Canva, Notion, Clay.
 
 ## Names
 
-- Product: "Ledgerline", never "the platform" or "our solution".
-- Customers: "our controllers", or the person's first name with permission.
-- Competitors: named directly when relevant, never "legacy tools".
+- Company: "64stories", never "the agency" or "our firm".
+- System: "the Agentic Marketing System", named as a product, not "our approach".
+- Clients: anonymized ("a new client at 64stories", "an established CEO") unless cleared.
 
-## Never says (0 of 18 posts)
+## Never says
 
+- synergy
 - leverage (as a verb)
-- streamline, seamless, robust
-- excited to announce
-- delve, unlock, journey
-- best-in-class, cutting-edge
-- solutions (plural, as a category)
+- game-changing
+- "excited to announce"

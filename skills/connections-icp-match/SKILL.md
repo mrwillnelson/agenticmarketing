@@ -64,12 +64,12 @@ Bad ICP line: "Marketing leaders at growing companies."
 Better: "Head of Growth, VP Marketing, or a founder still running marketing themselves, at B2B SaaS companies between 10 and 100 people, post-revenue. Never agencies, never enterprise."
 Why: the better one names titles, a company type, a size band, and disqualifiers, so any CSV row can be scored against it; the bad one matches half of LinkedIn.
 
-Bad first touch: "Hi Maya, congrats on the growth at Brightloop! I help founders turn their sales calls into content that converts. Do you have 15 minutes this week?"
-Better: "Maya, saw Brightloop opened the Austin office. We connected after that ops meetup last spring. How is the second market treating you compared to the first?"
-Why: the bad one asks for time before earning attention; the better one references shared context, shows the sender actually looked, and asks about her, not a meeting.
+Bad first touch: "Hi, congrats on all the growth! I help founders turn their sales calls into content that converts. Do you have 15 minutes this week?"
+Better: "Saw your team just opened the second office. We connected after that ops meetup last spring. How is the new market treating you compared to the first?"
+Why: the bad one asks for time before earning attention; the better one references shared context, shows the sender actually looked, and asks about the contact, not a meeting.
 
-Bad tier call: "Jonas Keller, no position listed, Fernbank Labs: A, because Fernbank sounds like a startup."
-Better: "Jonas Keller, no position listed, Fernbank Labs: C. Company name alone cannot confirm type or his role; flag for the user to confirm."
+Bad tier call: "A contact with no position listed, company name only: A, because the name sounds like a startup."
+Better: "A contact with no position listed, company name only: C. The name alone cannot confirm company type or role; flag the row for the user to confirm."
 Why: the better call tiers down on missing evidence instead of guessing, which keeps the A-list trustworthy.
 
 ## Self-check

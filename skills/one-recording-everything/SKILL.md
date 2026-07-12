@@ -17,6 +17,7 @@ One recording carries more than one piece, but never carries every piece. This s
 6. Each piece routes through its dedicated sibling skill. Do not draft a post, script, or newsletter section inline in this skill; pass the exact verbatim quotes and timestamps forward and let the specialist skill do its job.
 7. Every written piece passes `draft-qa` before the user sees it. The gate is hard, not advisory.
 8. Never publish near-identical framings on the same day. Sequencing is part of the deliverable, not an afterthought.
+9. The deliverable is ONE artifact following [references/output-template.md](references/output-template.md), never scattered outputs.
 
 ## Procedure
 
@@ -37,7 +38,7 @@ One recording carries more than one piece, but never carries every piece. This s
    - Article outline: build from the mechanism candidates, section by section, each section anchored to a transcript moment.
 6. Sequence the set. Clips and the strongest post ship first. The newsletter follows and can reference the public discussion those pieces started. The article goes last, when the thesis has been tested in shorter forms. Spread pieces with similar framings across different days.
 7. Run `draft-qa` on every written piece (posts, newsletter section, scripts). Clips and outlines get a manual pass against the hard rules instead.
-8. Deliver the updated plan table with statuses, the sequenced schedule, and each piece labeled with its source timestamps.
+8. Deliver the updated plan table with statuses, the sequenced schedule, and each piece labeled with its source timestamps, assembled as one artifact per [references/output-template.md](references/output-template.md).
 
 ## Output format
 
@@ -55,6 +56,8 @@ Thesis: <one sentence>
 ```
 
 Follow the table with the sequencing plan: which piece ships on which day, in order.
+
+Read [references/output-template.md](references/output-template.md) when assembling the final deliverable; it defines the full single-artifact structure, from header and plan table through inline pieces to the source-trace appendix.
 
 ## Personalization
 

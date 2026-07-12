@@ -82,6 +82,8 @@ Bad: candidate built on "our biggest customer told me their churn hit 40 percent
 Better: from the same call, candidate on the speaker's own line "I realized I had been selling retention software while ignoring my own renewal emails for two months."
 Why: the bad one publishes someone else's private trouble; the better one finds the speaker's own confession in the same conversation.
 
+Real worked examples with real numbers: see [references/receipts.md](references/receipts.md).
+
 ## Self-check
 
 - Is every quote character for character from the transcript, filler words included?

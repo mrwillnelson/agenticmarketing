@@ -24,12 +24,49 @@ npx skills add mrwillnelson/agenticmarketing --skill hooks   # one skill
 
 Or add as a Claude Code plugin, or clone and copy `skills/` into your project.
 
+## Try it in five minutes
+
+Nothing to configure. Pick a path, paste one message into your agent.
+
+**Path A: measure your voice.**
+
+```
+Use the voice-pack skill on these posts:
+
+[paste 10 to 30 of your LinkedIn posts]
+```
+
+The skill measures how you actually write and builds your `my-story/` pack from the numbers. Here is a real fingerprint:
+
+```
+Voice fingerprint: Will Nelson, Founder of 64stories.com, measured from his last 33 posts
+
+Median post length:      79 words
+Average sentence length: 18 words
+Contractions:            1.8 per 100 words
+Sentences per paragraph: 0.6 (most paragraphs are one line or a fragment)
+Exclamation points:      none
+```
+
+Every writing skill in the repo now drafts inside those numbers instead of the default AI register.
+
+**Path B: turn one call into a content set.**
+
+```
+Use the one-recording-everything skill on this transcript:
+
+[paste any call, webinar, or podcast transcript]
+```
+
+You get one artifact back: a plan table, full post drafts, clip timestamps with verbatim opening lines, and a newsletter section, every claim traced to a transcript line.
+
 ## Start here
 
 | Skill | What it does |
 |---|---|
 | [`voice-pack`](skills/voice-pack/SKILL.md) | Builds your entire `my-story/` pack from 10 to 30 of your own posts plus a transcript or two: measured voice fingerprint, lexicon, anti-patterns, hooks |
 | [`story-context`](skills/story-context/SKILL.md) | Loads your pack and resolves platform, output type, and pillar before any writing starts. Every other skill loads this first |
+| [`improve-my-pack`](skills/improve-my-pack/SKILL.md) | The monthly coach loop: diffs your drafts against what you actually published, folds in performance weights, and proposes evidenced pack updates |
 
 ## Listening
 
@@ -40,7 +77,10 @@ Find the raw truth in what you already say and do.
 | [`transcript-ideas`](skills/transcript-ideas/SKILL.md) | Transcript in, scored idea candidates out: title, hook direction, angle, pillar, verbatim supporting quote, rubric score |
 | [`clip-finder`](skills/clip-finder/SKILL.md) | Given a timestamped transcript, find the 30 to 90 second segments with a self-contained tension arc and clean in and out points |
 
-Coming: cross-transcript synthesis, meeting-to-post, pillar gap analysis, outlier and competitor listening, idea banking.
+| [`cross-transcript-synthesis`](skills/cross-transcript-synthesis/SKILL.md) | Patterns across months of calls: recurring themes, position evolution, contradictions, and the ideas no single call contains |
+| [`outlier-analysis`](skills/outlier-analysis/SKILL.md) | Paste 10 to 20 top posts from your niche, get the why behind each and a format library, fit-ranked to your voice |
+
+Coming: pillar gap analysis, idea banking, competitor listening.
 
 ## Narrative
 
@@ -59,7 +99,11 @@ Make it public language that sounds like you.
 | [`voice-match`](skills/voice-match/SKILL.md) | Rhythm fingerprint from your approved posts, then a line-by-line "would you actually say this" check |
 | [`draft-qa`](skills/draft-qa/SKILL.md) | The pre-publish composite gate: anti-AI scan, voice drift, hook check, word range, proof trace. Pass or fail with line-level fixes |
 
-Coming: thought-leadership, story, and data hooks; script style archetypes; carousels; newsletter styles; elegant keyword placement for long-form articles; brief writing.
+| [`brief-writer`](skills/brief-writer/SKILL.md) | The full content brief before drafting: thesis, tension, source truth, hook direction, avoid-list, with an 8-axis quality gate that refuses weak briefs |
+| [`meeting-to-post`](skills/meeting-to-post/SKILL.md) | The daily rep: one call, one moment, one post shipped the same day, anchored on the verbatim spoken line |
+| [`linkedin-article-keywords`](skills/linkedin-article-keywords/SKILL.md) | Keyword placement in long-form articles so elegant a reader never notices. The thought leadership always wins the conflict |
+
+Coming: thought-leadership, story, and data hooks; script style archetypes; carousels; newsletter styles.
 
 ## Demand
 
@@ -70,13 +114,18 @@ Turn the attention into pipeline.
 | [`connections-icp-match`](skills/connections-icp-match/SKILL.md) | Parse your exported LinkedIn connections, score every contact against your ICP, get ranked segments and who to engage first |
 | [`what-worked`](skills/what-worked/SKILL.md) | Your last 90 days of posts: which hooks, pillars, and formats over-performed, as weights you feed back into the writing skills |
 
-Coming: engagement-to-pipeline, comment strategy, posting cadence, lead-magnet CTA discipline, content-to-pipeline measurement. Demand here stays content-first: skills that turn what you publish into conversations and pipeline, not general-purpose outbound tooling.
+| [`engagement-to-pipeline`](skills/engagement-to-pipeline/SKILL.md) | Who engaged with what, scored against your ICP, routed into conversations that reference the content. Never a pitch first |
+| [`content-audit`](skills/content-audit/SKILL.md) | The 90-day teardown: pillar drift, voice drift, hook entropy, AI-tell creep, graded with evidence and three fixes |
+
+Coming: comment strategy, posting cadence, lead-magnet CTA discipline. Demand here stays content-first: skills that turn what you publish into conversations and pipeline, not general-purpose outbound tooling.
 
 ## The quality bar
 
 - Skills ship scripts where the check is deterministic. Scanners are code, not vibes.
 - Script-bearing skills carry `evals/evals.json`: runnable cases CI executes on every change.
 - Every skill carries good and bad examples, because examples steer harder than rules.
+- Flagship skills carry `references/receipts.md`: real posts by Will Nelson, Founder of 64stories.com, with real engagement numbers, dissected by the skill that teaches the craft.
+- New skills carry `references/bakeoff.md`: the same input run without and with the skill, side by side, so you can judge the difference yourself.
 - Every gate supports exemptions in `my-story/anti-patterns.md`, so it never sands off a real voice.
 - Skills degrade gracefully: they work with an empty `my-story/` pack and tell you what filling it would improve.
 

@@ -86,6 +86,8 @@ Bad: "Comments doubled this period. Your engagement strategy is working; expect 
 Better: "Comments doubled, but on the top post 9 of 12 came from other founders, not buyers. Count that as reach and social proof. Before calling it pipeline, check profile views, DMs, or inbound over the same window."
 Why: peer applause and buyer intent are different metrics; conflating them turns a reach win into a fake revenue claim.
 
+Real worked examples with real numbers: see [references/receipts.md](references/receipts.md).
+
 ## Self-check
 
 - Does every stated finding rest on 3 or more posts, and does everything thinner say "not enough data"?

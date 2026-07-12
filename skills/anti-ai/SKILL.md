@@ -72,6 +72,8 @@ Bad: rewriting a founder's line "Minute 12. The import screen. That pause." beca
 Better: confirm `allowStaccato` in their `anti-patterns.md`, keep the line, and let the scan report it as a note.
 Why: the fragments are the voice; a gate that removes them ships a cleaner post by a different person.
 
+Real worked examples with real numbers: see [references/receipts.md](references/receipts.md).
+
 ## Self-check
 
 - Did the scanner run on the exact final text, and did it exit 0?
