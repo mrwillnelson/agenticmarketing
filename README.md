@@ -1,6 +1,8 @@
 # Agentic Marketing Skills
 
-Open-source agent skills for founder content. The system from raw conversation to published post to pipeline, packaged as skills for Claude Code, Codex, Cursor, and any agent that reads the Agent Skills spec.
+Open-source agent skills to run agentic executive comms. The system from raw conversation to published post to pipeline, packaged as skills for Claude Code, Codex, Cursor, and any agent that reads the Agent Skills spec.
+
+Built by [Will Nelson](https://ca.linkedin.com/in/mrwillnelson) of 64stories.com. If you want a team to build this system for you, or run your executive comms on top of it, get in touch. We have 20 years of experience building founder brands and executive thought leadership for companies like Bolt, Woo, Loom, Buffer, and more.
 
 The thesis:
 
