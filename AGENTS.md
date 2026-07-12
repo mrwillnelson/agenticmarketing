@@ -32,6 +32,7 @@ This repository contains agent skills for founder content work, organized as Lis
 | Write a short-form video script | `skills/short-form-script` |
 | Write a newsletter issue | `skills/newsletter` |
 | Adapt a proven post format to the user's story | `skills/format-remix` |
+| React to a trending story with the user's earned angle | `skills/newsjacking` |
 | Turn one recording into a full content set | `skills/one-recording-everything` |
 | Scan a draft for AI tells | `skills/anti-ai` |
 | Check a draft against the user's voice | `skills/voice-match` |
@@ -45,6 +46,9 @@ This repository contains agent skills for founder content work, organized as Lis
 | Turn post engagers into warm conversations | `skills/engagement-to-pipeline` |
 | Analyze what content performed | `skills/what-worked` |
 | Run the 90-day content teardown | `skills/content-audit` |
+| Build today's comment queue from the user's listening sources | `skills/comment-strategy` |
+| Answer a journalist source request | `skills/press-quotes` |
+| Pitch the user's story to podcasts, newsletters, journalists | `skills/founder-pitch` |
 
 ## The my-story pack
 

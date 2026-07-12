@@ -1,0 +1,61 @@
+{
+  "cases": [
+    {
+      "name": "rss mode parses a local RSS fixture and prints all three titles",
+      "script": "scripts/pull-trends.mjs",
+      "args": ["--rss", "$TMP/feed.xml"],
+      "files": {
+        "feed.xml": "<?xml version=\"1.0\"?><rss version=\"2.0\"><channel><title>Fixture</title><item><title>First fixture story about agents</title><link>https://example.com/one</link><pubDate>Mon, 05 Jan 2026 09:00:00 GMT</pubDate></item><item><title>Second fixture story about buyers</title><link>https://example.com/two</link><pubDate>Sun, 04 Jan 2026 09:00:00 GMT</pubDate></item><item><title>Third fixture story about trust</title><link>https://example.com/three</link><pubDate>Sat, 03 Jan 2026 09:00:00 GMT</pubDate></item></channel></rss>"
+      },
+      "expectExit": 0,
+      "expectContains": [
+        "3 found, newest first",
+        "First fixture story about agents",
+        "Second fixture story about buyers",
+        "Third fixture story about trust",
+        "https://example.com/one",
+        "Window guide:"
+      ]
+    },
+    {
+      "name": "rss mode parses Atom entries and decodes CDATA and entities",
+      "script": "scripts/pull-trends.mjs",
+      "args": ["--rss", "$TMP/feed.atom"],
+      "files": {
+        "feed.atom": "<?xml version=\"1.0\"?><feed xmlns=\"http://www.w3.org/2005/Atom\"><title>Atom Fixture</title><entry><title><![CDATA[Founders & the feed]]></title><link rel=\"alternate\" href=\"https://example.com/atom-one\"/><updated>2026-01-05T10:00:00Z</updated></entry><entry><title>Numbers &amp; narrative</title><link href=\"https://example.com/atom-two\"/><updated>2026-01-04T10:00:00Z</updated></entry></feed>"
+      },
+      "expectExit": 0,
+      "expectContains": [
+        "2 found, newest first",
+        "Founders & the feed",
+        "Numbers & narrative",
+        "https://example.com/atom-one",
+        "https://example.com/atom-two"
+      ]
+    },
+    {
+      "name": "no arguments prints usage and exits 2",
+      "script": "scripts/pull-trends.mjs",
+      "args": [],
+      "expectExit": 2,
+      "expectContains": ["Usage: node pull-trends.mjs", "--hn", "--reddit", "--rss"]
+    },
+    {
+      "name": "missing local feed file fails clearly and exits 2",
+      "script": "scripts/pull-trends.mjs",
+      "args": ["--rss", "$TMP/does-not-exist.xml"],
+      "expectExit": 2,
+      "expectContains": ["Cannot read feed file"]
+    },
+    {
+      "name": "a file with no feed items fails clearly and exits 2",
+      "script": "scripts/pull-trends.mjs",
+      "args": ["--rss", "$TMP/not-a-feed.xml"],
+      "files": {
+        "not-a-feed.xml": "<html><body>This is a web page, not a feed.</body></html>"
+      },
+      "expectExit": 2,
+      "expectContains": ["No RSS or Atom items found"]
+    }
+  ]
+}

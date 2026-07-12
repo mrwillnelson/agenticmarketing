@@ -101,5 +101,5 @@ Why: recurrence in the niche and fit to the user are different questions; the be
 
 ---
 
-Part of [Agentic Marketing Skills](https://github.com/mrwillnelson/agenticmarketing) by [64stories](https://64stories.co).
-The full Agentic Marketing System runs this against your real calls, with a human editor and a per-post learning loop.
+Part of [Agentic Marketing Skills](https://github.com/mrwillnelson/agenticmarketing) by Will Nelson, founder of [64stories](https://64stories.com).
+The full Agentic Marketing System runs this against your real calls with a human editor and a per-post learning loop; narrative intelligence lives in the [TalkStories plugin](https://talkstories.ai).

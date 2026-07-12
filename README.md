@@ -76,7 +76,6 @@ Find the raw truth in what you already say and do.
 |---|---|
 | [`transcript-ideas`](skills/transcript-ideas/SKILL.md) | Transcript in, scored idea candidates out: title, hook direction, angle, pillar, verbatim supporting quote, rubric score |
 | [`clip-finder`](skills/clip-finder/SKILL.md) | Given a timestamped transcript, find the 30 to 90 second segments with a self-contained tension arc and clean in and out points |
-
 | [`cross-transcript-synthesis`](skills/cross-transcript-synthesis/SKILL.md) | Patterns across months of calls: recurring themes, position evolution, contradictions, and the ideas no single call contains |
 | [`outlier-analysis`](skills/outlier-analysis/SKILL.md) | Paste 10 to 20 top posts from your niche, get the why behind each and a format library, fit-ranked to your voice |
 
@@ -98,10 +97,10 @@ Make it public language that sounds like you.
 | [`anti-ai`](skills/anti-ai/SKILL.md) | The gate: a deterministic scanner for AI tells plus the judgment layer for what no regex catches. Supports your personal exemptions |
 | [`voice-match`](skills/voice-match/SKILL.md) | Rhythm fingerprint from your approved posts, then a line-by-line "would you actually say this" check |
 | [`draft-qa`](skills/draft-qa/SKILL.md) | The pre-publish composite gate: anti-AI scan, voice drift, hook check, word range, proof trace. Pass or fail with line-level fixes |
-
 | [`brief-writer`](skills/brief-writer/SKILL.md) | The full content brief before drafting: thesis, tension, source truth, hook direction, avoid-list, with an 8-axis quality gate that refuses weak briefs |
 | [`meeting-to-post`](skills/meeting-to-post/SKILL.md) | The daily rep: one call, one moment, one post shipped the same day, anchored on the verbatim spoken line |
 | [`linkedin-article-keywords`](skills/linkedin-article-keywords/SKILL.md) | Keyword placement in long-form articles so elegant a reader never notices. The thought leadership always wins the conflict |
+| [`newsjacking`](skills/newsjacking/SKILL.md) | A story is trending in your space. Your earned angle, traced to real experience, posted while the window is open. Refuses empty takes and tragedy-jacking |
 
 Coming: thought-leadership, story, and data hooks; script style archetypes; carousels; newsletter styles.
 
@@ -113,11 +112,13 @@ Turn the attention into pipeline.
 |---|---|
 | [`connections-icp-match`](skills/connections-icp-match/SKILL.md) | Parse your exported LinkedIn connections, score every contact against your ICP, get ranked segments and who to engage first |
 | [`what-worked`](skills/what-worked/SKILL.md) | Your last 90 days of posts: which hooks, pillars, and formats over-performed, as weights you feed back into the writing skills |
-
 | [`engagement-to-pipeline`](skills/engagement-to-pipeline/SKILL.md) | Who engaged with what, scored against your ICP, routed into conversations that reference the content. Never a pitch first |
 | [`content-audit`](skills/content-audit/SKILL.md) | The 90-day teardown: pillar drift, voice drift, hook entropy, AI-tell creep, graded with evidence and three fixes |
+| [`comment-strategy`](skills/comment-strategy/SKILL.md) | The daily listening loop: pull your sources, score against your ICP, get the 10 comments worth leaving today, drafted in your voice |
+| [`press-quotes`](skills/press-quotes/SKILL.md) | Get quoted by answering journalist source requests well: honest ROI gate, 15-minute daily triage, quote-first responses in your voice |
+| [`founder-pitch`](skills/founder-pitch/SKILL.md) | Earned media for founders: podcasts and newsletters first, six pitch angles from your real numbers, under 150 words, one follow-up max |
 
-Coming: comment strategy, posting cadence, lead-magnet CTA discipline. Demand here stays content-first: skills that turn what you publish into conversations and pipeline, not general-purpose outbound tooling.
+Coming: posting cadence, lead-magnet CTA discipline. Demand here stays content-first: skills that turn what you publish into conversations and pipeline, not general-purpose outbound tooling.
 
 ## The quality bar
 
@@ -133,6 +134,7 @@ Repo meta lives in [`skills/skill-author/SKILL.md`](skills/skill-author/SKILL.md
 
 ## About
 
-These skills are the open-source layer of the [Agentic Marketing System](https://64stories.co). The full OS adds your calls auto-ingested, a human editor, per-post learning loops, and someone else running all of it for you.
+Built by Will Nelson, founder of [64stories](https://64stories.com). These skills are the open-source layer of the Agentic Marketing System.
 
-Built by [64stories](https://64stories.co).
+- Narrative intelligence: the TalkStories plugin at [talkstories.ai](https://talkstories.ai)
+- Executive communications and GTM: [64stories.com](https://64stories.com), where the full system runs against your real calls, with a human editor, per-post learning loops, and someone else operating all of it for you

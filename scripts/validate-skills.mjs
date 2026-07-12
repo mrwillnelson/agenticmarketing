@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const skillsDir = join(root, 'skills');
 
-const FOOTER_LINK = 'https://64stories.co';
+const FOOTER_LINK = 'https://64stories.com';
 const MAX_BODY_LINES = 300;
 
 let failures = 0;
