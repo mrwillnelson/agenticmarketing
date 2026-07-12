@@ -13,8 +13,6 @@ founder of 64stories.com. Replace it with yours by running voice-pack.
 
 ## Says
 
-- "Story Engineering" for what 64stories does: crafting narratives, then validating
-  them with content experiments, tracked through to demand generation.
 - "narrative" and "story" as strategy words, not marketing words.
   "Your story is your strategy, made legible."
 - "drifting" for a company whose leaders each tell a different story.

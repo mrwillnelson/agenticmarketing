@@ -10,7 +10,7 @@ One press request, two responses, and the reasons a journalist picks one and del
 
 ## Baseline response (no skill)
 
-> Great question! AI is definitely transforming how founders approach content, and we think the key is balance. Tools can dramatically increase output, but founders need to make sure they stay true to their core values and unique perspective, because at the end of the day authenticity is the currency of modern brand building. In our experience, the founders who win are the ones who use AI to augment rather than replace the human touch. At 64stories we've built a Story Engineering process that helps founders leverage AI while keeping their voice front and center, and we'd be happy to share more or walk you through a demo. Feel free to reach out anytime, and thanks for covering this important topic!
+> Great question! AI is definitely transforming how founders approach content, and we think the key is balance. Tools can dramatically increase output, but founders need to make sure they stay true to their core values and unique perspective, because at the end of the day authenticity is the currency of modern brand building. In our experience, the founders who win are the ones who use AI to augment rather than replace the human touch. At 64stories we've built a process that helps founders use AI while keeping their voice front and center, and we'd be happy to share more or walk you through a demo. Feel free to reach out anytime, and thanks for covering this important topic!
 
 ### Why this gets deleted
 

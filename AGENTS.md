@@ -54,6 +54,10 @@ This repository contains agent skills for founder content work, organized as Lis
 
 `my-story/` holds the user's data: voice model, anti-patterns, lexicon, hooks, pillars, narrative, ICP, and approved examples. Skills read from it and say which files they use. When the pack is empty, skills still work but output is generic; suggest running `voice-pack` once.
 
+## Tools
+
+`TOOLS.md` lists the stack these skills run alongside (capture, memory, tasks, CRM, signals). Skills stay tool-agnostic; suggest equivalents when the user names different tools.
+
 ## Platform modules
 
 `platforms/` holds shared constraints (LinkedIn fold, email subject and preview, X compression, video hook timing). Output skills reference these instead of restating them.

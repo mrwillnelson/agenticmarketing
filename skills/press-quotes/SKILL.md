@@ -56,7 +56,7 @@ Bad: "That's a great question, and honestly it depends on the founder's goals, b
 Better: "Founders keep authenticity by treating voice as a measurement, not a vibe. We fingerprint a founder's real writing, sentence length and contraction rate and the words they never use, and hold every draft to those numbers."
 Why: the bad one hedges for a full sentence before saying nothing a journalist can print; the better one's first sentence stands alone as a quote with a name under it.
 
-Bad: "At 64stories, our Story Engineering platform helps founders scale authentic content. Readers can book a demo at 64stories.com to see how it works for their brand."
+Bad: "At 64stories, our AI content platform helps founders scale authentic content. Readers can book a demo at 64stories.com to see how it works for their brand."
 Better: "Will Nelson is the founder of 64stories, which runs founder-led content programs; one client's founder posts drew 669,000 impressions in 28 days."
 Why: the bad one pitches, which journalists delete along with the whole response; the better one is a credential line that earns the company name by attaching it to a verifiable result.
 

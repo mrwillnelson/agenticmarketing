@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Privacy pass: the my-story/ pack no longer ships 64stories' internal strategy. icp.md, pillars.md, narrative.md, and listening-sources.md are pure templates; only Will Nelson's public story remains (measured fingerprint, published posts, public engagement numbers). Retired "Story Engineering" from all teaching content. Added TOOLS.md, the real stack the skills run alongside.
+
 - Four earned-attention skills: newsjacking, press-quotes, founder-pitch, comment-strategy (29 total), each with a bake-off, plus two new tested pull scripts (trends and listening sources) and a `my-story/listening-sources.md` template.
 - Repo pointers updated: built by Will Nelson, founder of 64stories.com; narrative intelligence via the TalkStories plugin at talkstories.ai; executive communications and GTM via 64stories.com.
 

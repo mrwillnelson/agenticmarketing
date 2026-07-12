@@ -138,3 +138,4 @@ Built by Will Nelson, founder of [64stories](https://64stories.com). These skill
 
 - Narrative intelligence: the TalkStories plugin at [talkstories.ai](https://talkstories.ai)
 - Executive communications and GTM: [64stories.com](https://64stories.com), where the full system runs against your real calls, with a human editor, per-post learning loops, and someone else operating all of it for you
+- The tool stack these skills run alongside: [TOOLS.md](TOOLS.md)
