@@ -1,6 +1,6 @@
 # Agentic Marketing Skills
 
-Open-source agent skills for founder content. The system from raw conversation to published post to pipeline, packaged as skills for Claude Code, Codex, Cursor, and any agent that reads the Agent Skills spec.
+Open-source agent skills that take founder content from raw conversation to published post to real pipeline. They run in Claude Code, Codex, Cursor, and any agent that reads the Agent Skills spec.
 
 The thesis:
 
