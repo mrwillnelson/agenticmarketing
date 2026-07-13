@@ -38,7 +38,7 @@ Use the voice-pack skill on these posts:
 [paste 10 to 30 of your LinkedIn posts]
 ```
 
-The skill studies how you actually write and builds your `my-story/` pack. Then every writing skill drafts in your voice instead of the default AI register. Here is the same idea, written both ways:
+The skill learns your voice from your own posts and builds your `my-story/` pack. Then every writing skill sounds like you, not the default AI register. Same idea, written both ways:
 
 Generic AI:
 
@@ -48,7 +48,7 @@ The voice pack, matching Will Nelson (Founder of 64stories.com) to his own posts
 
 > I've seen this dozens of times. A founder struggles to tell their story. They blame it on being "too technical." But dig deeper and the real issue surfaces. They haven't made the hard decisions about what they are and what they're not.
 
-Same facts. The first has the tells: a "Time and again" wind-up, a staged reveal, a rule of three, sentences so even they hum. The second is the paragraph Will actually posted, on the way to 141 reactions. The pack holds a measured fingerprint of your rhythm so the skills can catch that drift, but the real work is matching your own writing, never hitting a statistic.
+Same facts. The first is generic AI: a "Time and again" wind-up, a staged reveal, a rule of three. The second is the paragraph Will actually posted. The skills learn from your real writing, so your posts stay yours.
 
 **Path B: turn one call into a content set.**
 
@@ -64,7 +64,7 @@ You get one artifact back: a plan table, full post drafts, clip timestamps with 
 
 | Skill | What it does |
 |---|---|
-| [`voice-pack`](skills/voice-pack/SKILL.md) | Builds your entire `my-story/` pack from 10 to 30 of your own posts plus a transcript or two: measured voice fingerprint, lexicon, anti-patterns, hooks |
+| [`voice-pack`](skills/voice-pack/SKILL.md) | Builds your entire `my-story/` pack from 10 to 30 of your own posts plus a transcript or two: voice, lexicon, anti-patterns, hooks |
 | [`story-context`](skills/story-context/SKILL.md) | Loads your pack and resolves platform, output type, and pillar before any writing starts. Every other skill loads this first |
 | [`improve-my-pack`](skills/improve-my-pack/SKILL.md) | The monthly coach loop: diffs your drafts against what you actually published, folds in performance weights, and proposes evidenced pack updates |
 
@@ -125,7 +125,7 @@ Coming: posting cadence, lead-magnet CTA discipline. Demand here stays content-f
 - Skills ship scripts where the check is deterministic. Scanners are code, not vibes.
 - Script-bearing skills carry `evals/evals.json`: runnable cases CI executes on every change.
 - Every skill carries good and bad examples, because examples steer harder than rules.
-- Voice comes from your real posts, not a formula. The measured fingerprint is a floor that catches AI drift; your own writing sets the register. `voice-match` holds the rule: when the guide and the posts disagree, the posts win.
+- Voice comes from your real posts, not a formula. Your own writing sets the register; `voice-match` holds the rule: when the guide and the posts disagree, the posts win.
 - Flagship skills carry `references/receipts.md`: real posts by Will Nelson, Founder of 64stories.com, with real engagement numbers, dissected by the skill that teaches the craft.
 - New skills carry `references/bakeoff.md`: the same input run without and with the skill, side by side, so you can judge the difference yourself.
 - Every gate supports exemptions in `my-story/anti-patterns.md`, so it never sands off a real voice.
