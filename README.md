@@ -1,10 +1,14 @@
-# Agentic Marketing Skills
+# Agentic Marketing Systems
 
-Open-source agent skills to run agentic executive comms: the whole path from raw conversation to published post to real pipeline. They run in Claude Code, Codex, Cursor, and any agent that reads the Agent Skills spec.
+Open-source systems for turning repeatable marketing workflows into agentic workflows.
 
-Built by Will Nelson of [64stories](https://64stories.com). If you want a team to build this system for you, or run your executive comms on top of it, [get in touch](https://64stories.com). We have 20 years of experience building founder brands and executive thought leadership for companies like Bolt, Woo, Loom, Buffer, and more.
+A prompt produces an output. A system runs the workflow.
 
-The thesis:
+This repo provides the skills, context packs, quality gates, examples, scripts, and operating loops required to make marketing work agentic: source-aware, context-aware, judgment-driven, human-reviewable, and able to learn from performance.
+
+Built by Will Nelson of [64stories](https://64stories.com). If you want a team to build this system for you, or run it on top of your own marketing, [get in touch](https://64stories.com). We have 20 years of experience building founder brands and executive thought leadership for companies like Bolt, Woo, Loom, Buffer, and more.
+
+The first complete system is **Agentic Executive Comms**. It turns company signal into executive content and demand:
 
 ```
 LISTENING ──────────▶ NARRATIVE ──────────▶ DEMAND
@@ -13,9 +17,40 @@ in what you already   language that sounds   into pipeline
 say and do            like you
 ```
 
-Most founders have the raw material for a year of content sitting in their calls, and most content tools skip straight to writing. These skills work the whole chain: listen to what you already said, shape it into language that sounds like you, and point the attention it earns at your ICP.
+Most companies already have the raw material for a year of executive content sitting inside calls, customer conversations, product meetings, sales notes, podcasts, webinars, and internal debates. Most AI content tools skip straight to writing. Agentic Executive Comms starts earlier: it listens to the source material, finds what is worth saying, turns it into voice-matched content, checks the output, routes judgment to humans, and learns from what the market does next.
 
-Most content skills also produce the same output for every user. These get better the more they know about you: a `my-story/` pack holds your voice model, your banned patterns, your pillars, and your ICP, and every skill reads from it. The `voice-pack` skill builds the pack for you from your own posts and transcripts in about ten minutes.
+## What makes a marketing workflow agentic
+
+A marketing workflow becomes agentic when it can ingest source material, understand company context, make judgment calls, produce useful work, check its own output, route exceptions to humans, and learn from what happens next.
+
+Every system in this repo has five layers:
+
+1. **Inputs** the system listens to: calls, transcripts, analytics, social activity, CRM notes, customer feedback, competitor movement.
+2. **Context** it needs before it acts: company, audience, positioning, voice, offers, market beliefs, constraints, examples. This lives in your `my-story/` pack.
+3. **Judgment**: the scoring, routing, and decision rules that determine what happens next.
+4. **Production**: the briefs, drafts, analyses, and assets the system creates.
+5. **Learning**: the performance data, human edits, approvals, and rejections that improve the next run.
+
+## Skills vs systems
+
+A skill helps an agent perform one task. A system helps an agent run a workflow. This repo contains both.
+
+The individual skills work on their own: write a hook, find a clip, mine a transcript, draft a LinkedIn post, check for AI tells, match a voice. The real value comes from chaining them into systems with shared context, source material, quality gates, human approval, and learning loops. That is the difference between an assistant that writes marketing copy and a workflow that improves how marketing work gets done.
+
+Systems are complete workflows. Skills are reusable components. Gates are quality checks. Packs are persistent context. Loops are recurring workflows.
+
+## System 1: Agentic Executive Comms
+
+Executive communications is the first complete system in this repo because it is one of the highest-leverage marketing workflows a company can make agentic. The ingredients are ideal: lots of unused source material, a high need for voice accuracy, real strategic judgment, high commercial leverage, a repeated workflow, a clear human approval gate, and a measurable market response.
+
+Most companies already have the raw material:
+
+- founder calls, customer conversations, product meetings, sales calls
+- podcasts, webinars, internal debates
+- competitor positioning, market reactions, buyer objections
+- proof hidden inside the business
+
+But that signal rarely turns into consistent public narrative. It stays scattered across recordings, notes, docs, Slack threads, and the heads of the people closest to the customer. Agentic Executive Comms turns that workflow into a system, along the LISTENING to NARRATIVE to DEMAND chain: it finds the strongest source material, turns it into voice-matched executive content, checks the output against quality gates, routes judgment to humans where needed, and feeds performance back into the next cycle.
 
 ## Install
 
@@ -26,7 +61,7 @@ npx skills add mrwillnelson/agenticmarketing --skill hooks   # one skill
 
 Or add as a Claude Code plugin, or clone and copy `skills/` into your project.
 
-## Try it in five minutes
+## Start with the first system
 
 Nothing to configure. Pick a path, paste one message into your agent.
 
@@ -60,6 +95,24 @@ Use the one-recording-everything skill on this transcript:
 
 You get one artifact back: a plan table, full post drafts, clip timestamps with verbatim opening lines, and a newsletter section, every claim traced to a transcript line.
 
+**Path C: audit your last 90 days.**
+
+```
+Use the content-audit skill on these posts:
+
+[paste your last 90 days of posts, with metrics if you have them]
+```
+
+You get a graded teardown: pillar drift, voice drift, hook entropy, AI-tell creep, each grade tied to evidence, plus the three highest-leverage fixes.
+
+**Path D: find who to talk to.**
+
+```
+Use the connections-icp-match skill on my LinkedIn connections export.
+```
+
+You get every contact scored against your ICP into ranked tiers, and who to engage first.
+
 ## Usage
 
 Once installed, just tell your agent what you want. It picks the skill.
@@ -77,17 +130,19 @@ Once installed, just tell your agent what you want. It picks the skill.
 
 Or invoke one directly: `/hooks`, `/linkedin-post`, `/draft-qa`.
 
-## Start here
+## The skills, by layer
+
+Agentic Executive Comms is built from these skills, grouped by the layer of the workflow they serve.
+
+### Setup
 
 | Skill | What it does |
 |---|---|
 | [`voice-pack`](skills/voice-pack/SKILL.md) | Builds your entire `my-story/` pack from 10 to 30 of your own posts plus a transcript or two: voice, lexicon, anti-patterns, hooks |
 | [`story-context`](skills/story-context/SKILL.md) | Loads your pack and resolves platform, output type, and pillar before any writing starts. Every other skill loads this first |
-| [`improve-my-pack`](skills/improve-my-pack/SKILL.md) | The monthly coach loop: diffs your drafts against what you actually published, folds in performance weights, and proposes evidenced pack updates |
+| [`improve-my-pack`](skills/improve-my-pack/SKILL.md) | The monthly coach loop: diffs your drafts against what you actually published, folds in performance, and proposes evidenced pack updates |
 
-## Listening
-
-Find the raw truth in what you already say and do.
+### Listening: find the raw truth
 
 | Skill | What it does |
 |---|---|
@@ -96,11 +151,7 @@ Find the raw truth in what you already say and do.
 | [`cross-transcript-synthesis`](skills/cross-transcript-synthesis/SKILL.md) | Patterns across months of calls: recurring themes, position evolution, contradictions, and the ideas no single call contains |
 | [`outlier-analysis`](skills/outlier-analysis/SKILL.md) | Paste 10 to 20 top posts from your niche, get the why behind each and a format library, fit-ranked to your voice |
 
-Coming: pillar gap analysis, idea banking, competitor listening.
-
-## Narrative
-
-Make it public language that sounds like you.
+### Narrative: make it sound like you
 
 | Skill | What it does |
 |---|---|
@@ -113,17 +164,13 @@ Make it public language that sounds like you.
 | [`one-recording-everything`](skills/one-recording-everything/SKILL.md) | One recording becomes a post, clips, a newsletter section, and an article. Each native, all verbatim-grounded |
 | [`anti-ai`](skills/anti-ai/SKILL.md) | The gate: a deterministic scanner for AI tells plus the judgment layer for what no regex catches. Supports your personal exemptions |
 | [`voice-match`](skills/voice-match/SKILL.md) | Learns your rhythm from your approved posts, then a line-by-line "would you actually say this" check |
-| [`draft-qa`](skills/draft-qa/SKILL.md) | The pre-publish composite gate: anti-AI scan, voice drift, hook check, word range, proof trace. Pass or fail with line-level fixes |
+| [`draft-qa`](skills/draft-qa/SKILL.md) | The pre-publish composite gate: anti-AI scan, voice drift, hook check, length, proof trace. Pass or fail with line-level fixes |
 | [`brief-writer`](skills/brief-writer/SKILL.md) | The full content brief before drafting: thesis, tension, source truth, hook direction, avoid-list, with an 8-axis quality gate that refuses weak briefs |
 | [`meeting-to-post`](skills/meeting-to-post/SKILL.md) | The daily rep: one call, one moment, one post shipped the same day, anchored on the verbatim spoken line |
 | [`linkedin-article-keywords`](skills/linkedin-article-keywords/SKILL.md) | Keyword placement in long-form articles so elegant a reader never notices. The thought leadership always wins the conflict |
 | [`newsjacking`](skills/newsjacking/SKILL.md) | A story is trending in your space. Your earned angle, traced to real experience, posted while the window is open. Refuses empty takes and tragedy-jacking |
 
-Coming: thought-leadership, story, and data hooks; script style archetypes; carousels; newsletter styles.
-
-## Demand
-
-Turn the attention into pipeline.
+### Demand: turn attention into pipeline
 
 | Skill | What it does |
 |---|---|
@@ -135,7 +182,7 @@ Turn the attention into pipeline.
 | [`press-quotes`](skills/press-quotes/SKILL.md) | Get quoted by answering journalist source requests well: honest ROI gate, 15-minute daily triage, quote-first responses in your voice |
 | [`founder-pitch`](skills/founder-pitch/SKILL.md) | Earned media for founders: podcasts and newsletters first, six pitch angles from your real numbers, under 150 words, one follow-up max |
 
-Coming: posting cadence, lead-magnet CTA discipline. Demand here stays content-first: skills that turn what you publish into conversations and pipeline, not general-purpose outbound tooling.
+Meta: [`skill-author`](skills/skill-author/SKILL.md) is the house standard every skill here is written against. Read it first if you want to contribute.
 
 ## The quality bar
 
@@ -148,12 +195,22 @@ Coming: posting cadence, lead-magnet CTA discipline. Demand here stays content-f
 - Every gate supports exemptions in `my-story/anti-patterns.md`, so it never sands off a real voice.
 - Skills degrade gracefully: they work with an empty `my-story/` pack and tell you what filling it would improve.
 
-Repo meta lives in [`skills/skill-author/SKILL.md`](skills/skill-author/SKILL.md), the standard every skill here is written against. Read it first if you want to contribute.
+## Future systems
 
-## About
+Agentic Executive Comms is the first system because it is the workflow we know best. The same architecture, inputs to context to judgment to production to learning, can make other marketing workflows agentic:
 
-Built by Will Nelson, founder of [64stories](https://64stories.com). These skills are the open-source layer of the Agentic Marketing System.
+- **Agentic Competitive Intelligence**: monitor competitors, extract positioning shifts, find the open narrative space, brief the team.
+- **Agentic Customer Proof**: turn customer calls, support threads, reviews, and case studies into proof assets and sales-ready stories.
+- **Agentic Launch Marketing**: turn product changes, customer pain, and competitive context into launch narratives and campaign assets.
+- **Agentic Sales Enablement**: turn objections, deal notes, call moments, and content engagement into follow-up and enablement material.
+- **Agentic Website Optimization**: turn visitor data, customer language, sales objections, and competitor pages into page tests and copy improvements.
 
-- Narrative intelligence: the TalkStories plugin at [talkstories.ai](https://talkstories.ai)
-- Executive communications and GTM: [64stories.com](https://64stories.com), where the full system runs against your real calls, with a human editor, per-post learning loops, and someone else operating all of it for you
-- The tool stack these skills run alongside: [TOOLS.md](TOOLS.md)
+The goal is not a pile of disconnected marketing prompts. It is the operating patterns for agentic marketing work.
+
+## Open-source layer and managed layer
+
+This repo is the open-source layer: agent skills, context packs, quality gates, operating loops, examples, evals, and workflow patterns. Use it to build the system yourself.
+
+The managed 64stories layer adds automatic call and transcript ingestion, human editorial judgment, executive approvals, content calendars, publishing operations, performance review, per-client learning loops, pipeline interpretation, and a team to run the system for you.
+
+Use the repo if you want to build the system yourself. Work with [64stories](https://64stories.com) if you want it built or operated for you.

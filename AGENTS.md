@@ -1,6 +1,6 @@
 # Agent map
 
-This repository contains agent skills for founder content work, organized as Listening (find the raw truth), Narrative (make it public language), and Demand (turn it into pipeline). Route by job:
+This repository is a library of agentic marketing systems. The first system, Agentic Executive Comms, is built from the skills below, organized by workflow layer: Listening (find the raw truth), Narrative (make it public language), and Demand (turn it into pipeline). A skill does one task; a system chains skills with shared context, quality gates, and human approval. Route by job:
 
 ## Setup
 
