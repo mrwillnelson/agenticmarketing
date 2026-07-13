@@ -60,6 +60,23 @@ Use the one-recording-everything skill on this transcript:
 
 You get one artifact back: a plan table, full post drafts, clip timestamps with verbatim opening lines, and a newsletter section, every claim traced to a transcript line.
 
+## Usage
+
+Once installed, just tell your agent what you want. It picks the skill.
+
+| You say | Skill |
+|---|---|
+| "Find the best post idea in this call" | `transcript-ideas` |
+| "Turn this webinar into a week of content" | `one-recording-everything` |
+| "Write a LinkedIn post from these notes" | `linkedin-post` |
+| "This hook sounds generic, fix it" | `hooks` |
+| "Find the clip-worthy moments in this recording" | `clip-finder` |
+| "Which of my posts actually worked?" | `what-worked` |
+| "Score my LinkedIn connections against my ICP" | `connections-icp-match` |
+| "Check this draft before I post it" | `draft-qa` |
+
+Or invoke one directly: `/hooks`, `/linkedin-post`, `/draft-qa`.
+
 ## Start here
 
 | Skill | What it does |
