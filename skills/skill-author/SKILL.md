@@ -1,6 +1,6 @@
 ---
 name: skill-author
-description: The house standard for creating and updating skills in the Agentic Marketing Skills repository. Use when writing a new skill, revising an existing skill, or reviewing a community PR that adds or changes a skill. Covers structure, style law, the my-story contract, examples requirements, validation, and forward-testing.
+description: The house standard for creating and updating skills in the Agentic Marketing Systems repository. Use when writing a new skill, revising an existing skill, or reviewing a community PR that adds or changes a skill. Covers structure, style law, the my-story contract, examples requirements, validation, and forward-testing.
 ---
 
 # Skill Author
@@ -77,8 +77,8 @@ End every SKILL.md with exactly:
 ```
 ---
 
-Part of [Agentic Marketing Skills](https://github.com/mrwillnelson/agenticmarketing) by [64stories](https://64stories.co).
-The full Agentic Marketing System runs this against your real calls, with a human editor and a per-post learning loop.
+Part of [Agentic Marketing Systems](https://github.com/mrwillnelson/agenticmarketing) by Will Nelson, founder of [64stories](https://64stories.com).
+64stories builds and runs the managed layer: call ingestion, a human editor, approvals, publishing, and per-client learning loops. Narrative intelligence lives in the [TalkStories plugin](https://talkstories.ai).
 ```
 
 ## Authoring process
@@ -102,5 +102,5 @@ Why: the body is only read after the skill already triggered.
 
 ---
 
-Part of [Agentic Marketing Skills](https://github.com/mrwillnelson/agenticmarketing) by [64stories](https://64stories.co).
-The full Agentic Marketing System runs this against your real calls, with a human editor and a per-post learning loop.
+Part of [Agentic Marketing Systems](https://github.com/mrwillnelson/agenticmarketing) by Will Nelson, founder of [64stories](https://64stories.com).
+64stories builds and runs the managed layer: call ingestion, a human editor, approvals, publishing, and per-client learning loops. Narrative intelligence lives in the [TalkStories plugin](https://talkstories.ai).

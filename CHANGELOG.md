@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+- Repositioned from a skills repo to an agentic marketing SYSTEMS library. Agentic Executive Comms is now framed as System 1 (the reference implementation); the README leads with the systems thesis, a skills-vs-systems distinction, the five-layer definition, and a future-systems roadmap. Skills stay flat; the change is conceptual. Footers, plugin manifests, and AGENTS updated to the new name and the open-source-vs-managed-layer framing.
+
+- Privacy pass: the my-story/ pack no longer ships 64stories' internal strategy. icp.md, pillars.md, narrative.md, and listening-sources.md are pure templates; only Will Nelson's public story remains (measured fingerprint, published posts, public engagement numbers). Retired "Story Engineering" from all teaching content. Added TOOLS.md, the real stack the skills run alongside.
+
+- Four earned-attention skills: newsjacking, press-quotes, founder-pitch, comment-strategy (29 total), each with a bake-off, plus two new tested pull scripts (trends and listening sources) and a `my-story/listening-sources.md` template.
+- Repo pointers updated: built by Will Nelson, founder of 64stories.com; narrative intelligence via the TalkStories plugin at talkstories.ai; executive communications and GTM via 64stories.com.
+
 - Eight new skills: content-audit, brief-writer, outlier-analysis, engagement-to-pipeline, linkedin-article-keywords, improve-my-pack, cross-transcript-synthesis, meeting-to-post (25 total).
 - Real receipts: flagship skills carry `references/receipts.md` with Will Nelson's real published posts and engagement numbers; the `my-story/` worked example is now his real measured pack.
 - Bake-offs: every new skill ships `references/bakeoff.md` showing baseline vs with-skill output on the same input.

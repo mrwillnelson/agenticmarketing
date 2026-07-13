@@ -1,6 +1,6 @@
 # Agent map
 
-This repository contains agent skills for founder content work, organized as Listening (find the raw truth), Narrative (make it public language), and Demand (turn it into pipeline). Route by job:
+This repository is a library of agentic marketing systems. The first system, Agentic Executive Comms, is built from the skills below, organized by workflow layer: Listening (find the raw truth), Narrative (make it public language), and Demand (turn it into pipeline). A skill does one task; a system chains skills with shared context, quality gates, and human approval. Route by job:
 
 ## Setup
 
@@ -32,6 +32,7 @@ This repository contains agent skills for founder content work, organized as Lis
 | Write a short-form video script | `skills/short-form-script` |
 | Write a newsletter issue | `skills/newsletter` |
 | Adapt a proven post format to the user's story | `skills/format-remix` |
+| React to a trending story with the user's earned angle | `skills/newsjacking` |
 | Turn one recording into a full content set | `skills/one-recording-everything` |
 | Scan a draft for AI tells | `skills/anti-ai` |
 | Check a draft against the user's voice | `skills/voice-match` |
@@ -45,10 +46,17 @@ This repository contains agent skills for founder content work, organized as Lis
 | Turn post engagers into warm conversations | `skills/engagement-to-pipeline` |
 | Analyze what content performed | `skills/what-worked` |
 | Run the 90-day content teardown | `skills/content-audit` |
+| Build today's comment queue from the user's listening sources | `skills/comment-strategy` |
+| Answer a journalist source request | `skills/press-quotes` |
+| Pitch the user's story to podcasts, newsletters, journalists | `skills/founder-pitch` |
 
 ## The my-story pack
 
 `my-story/` holds the user's data: voice model, anti-patterns, lexicon, hooks, pillars, narrative, ICP, and approved examples. Skills read from it and say which files they use. When the pack is empty, skills still work but output is generic; suggest running `voice-pack` once.
+
+## Tools
+
+`TOOLS.md` lists the stack these skills run alongside (capture, memory, tasks, CRM, signals). Skills stay tool-agnostic; suggest equivalents when the user names different tools.
 
 ## Platform modules
 

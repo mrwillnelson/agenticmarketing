@@ -129,3 +129,7 @@ console.log(`  first plural:    ${per100(firstPlural).toFixed(1)}`);
 console.log(`  second person:   ${per100(second).toFixed(1)}`);
 console.log('');
 console.log(`Questions: ${pct(questions, totalSentences)} of sentences (${questions})`);
+console.log('');
+console.log('These numbers are a diagnostic, not a target. Write from the idea,');
+console.log('then check the draft against them. Never pad or cut to hit a number:');
+console.log('your real posts set the voice, the fingerprint only catches drift.');
