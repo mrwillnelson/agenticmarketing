@@ -8,6 +8,8 @@ This repo provides the skills, context packs, quality gates, examples, scripts, 
 
 Built by Will Nelson of [64stories](https://64stories.com). If you want a team to build this system for you, or run it on top of your own marketing, [get in touch](https://64stories.com). We have 20 years of experience building founder brands and executive thought leadership for companies like Bolt, Woo, Loom, Buffer, and more.
 
+<!-- scoreboard:start -->**46 skills · 13 tested scripts · 46 eval cases · 8 receipts files · 29 bake-offs**<!-- scoreboard:end -->
+
 The first complete system is **Agentic Executive Comms**. It turns company signal into executive content and demand:
 
 ```
@@ -59,7 +61,16 @@ npx skills add mrwillnelson/agenticmarketing            # everything
 npx skills add mrwillnelson/agenticmarketing --skill hooks   # one skill
 ```
 
-Or add as a Claude Code plugin, or clone and copy `skills/` into your project.
+Tip: run the npx command yourself in a terminal. If an agent runs it for you, pass the agent explicitly (`npx skills add mrwillnelson/agenticmarketing -a claude-code`) so it installs where your agent actually reads.
+
+Other options:
+
+- Claude Code plugin: `/plugin marketplace add mrwillnelson/agenticmarketing` then `/plugin install agentic-marketing-skills`
+- Clone and copy: `git clone https://github.com/mrwillnelson/agenticmarketing.git` then copy `skills/` into your project
+- Git submodule for easy updates: `git submodule add https://github.com/mrwillnelson/agenticmarketing.git`
+- Fork and customize: fork the repo, edit the skills and the pack templates, clone your fork
+
+New to coding agents entirely? Start with [docs/agents-for-marketers.md](docs/agents-for-marketers.md), the ten-minute onramp.
 
 ## Start with the first system
 
@@ -93,7 +104,7 @@ Use the one-recording-everything skill on this transcript:
 [paste any call, webinar, or podcast transcript]
 ```
 
-You get one artifact back: a plan table, full post drafts, clip timestamps with verbatim opening lines, and a newsletter section, every claim traced to a transcript line.
+You get one artifact back: a plan table, full post drafts, clip timestamps with verbatim opening lines, and a newsletter section, every claim traced to a transcript line. No transcript handy? Use the bundled sample at [examples/demo-call.md](examples/demo-call.md). Render the artifact into a shareable page with `node scripts/render-brief.mjs`. If anything misbehaves, run `node scripts/doctor.mjs`.
 
 **Path C: audit your last 90 days.**
 
@@ -130,6 +141,26 @@ Once installed, just tell your agent what you want. It picks the skill.
 
 Or invoke one directly: `/hooks`, `/linkedin-post`, `/draft-qa`.
 
+## How the skills fit together
+
+```
+                your my-story/ pack (voice, pillars, narrative, ICP)
+                   built by voice-pack . evolved by improve-my-pack
+                                      |
+                        story-context loads it first
+                                      |
+     LISTENING ---------------> NARRATIVE ----------------> DEMAND
+     transcript-ideas           hooks + specializations     comment-strategy
+     clip-finder                linkedin-post, carousel     engagement-to-pipeline
+     cross-transcript           newsletter + styles         connections-icp-match
+     outlier-analysis           short-form + styles         press-quotes, founder-pitch
+     pillar-gap, idea-bank      format-remix, newsjacking   posting-cadence, lead-magnet-cta
+     competitor-listening       one-recording-everything    what-worked, content-audit
+                                      |
+              gates on every draft: anti-ai, then voice-match, then draft-qa
+              performance flows back: what-worked writes the pack, the pack shapes the next draft
+```
+
 ## The skills, by layer
 
 Agentic Executive Comms is built from these skills, grouped by the layer of the workflow they serve.
@@ -150,6 +181,9 @@ Agentic Executive Comms is built from these skills, grouped by the layer of the 
 | [`clip-finder`](skills/clip-finder/SKILL.md) | Given a timestamped transcript, find the 30 to 90 second segments with a self-contained tension arc and clean in and out points |
 | [`cross-transcript-synthesis`](skills/cross-transcript-synthesis/SKILL.md) | Patterns across months of calls: recurring themes, position evolution, contradictions, and the ideas no single call contains |
 | [`outlier-analysis`](skills/outlier-analysis/SKILL.md) | Paste 10 to 20 top posts from your niche, get the why behind each and a format library, fit-ranked to your voice |
+| [`pillar-gap-finder`](skills/pillar-gap-finder/SKILL.md) | The weekly planner: which pillar is starving against your target mix, and the one capture moment this week that feeds it |
+| [`idea-bank`](skills/idea-bank/SKILL.md) | The scored backlog: bank candidates, resurface them by gap and wake condition, prune honestly. Ideas stop dying in scrollback |
+| [`competitor-listening`](skills/competitor-listening/SKILL.md) | Competitors' public narrative over time: verbatim position quotes, shift detection, and the open ground you can credibly claim |
 
 ### Narrative: make it sound like you
 
@@ -169,6 +203,18 @@ Agentic Executive Comms is built from these skills, grouped by the layer of the 
 | [`meeting-to-post`](skills/meeting-to-post/SKILL.md) | The daily rep: one call, one moment, one post shipped the same day, anchored on the verbatim spoken line |
 | [`linkedin-article-keywords`](skills/linkedin-article-keywords/SKILL.md) | Keyword placement in long-form articles so elegant a reader never notices. The thought leadership always wins the conflict |
 | [`newsjacking`](skills/newsjacking/SKILL.md) | A story is trending in your space. Your earned angle, traced to real experience, posted while the window is open. Refuses empty takes and tragedy-jacking |
+| [`thought-leadership-hooks`](skills/thought-leadership-hooks/SKILL.md) | Openers for belief-change posts: earned contrarianism only, steelman the belief, never say the obvious thing |
+| [`story-hooks`](skills/story-hooks/SKILL.md) | Openers for personal narrative: start mid-action, the small artifact carries the emotion, confession discipline |
+| [`data-hooks`](skills/data-hooks/SKILL.md) | Number-led openers: verifiable units, one number per hook, provenance always, the so-what gate |
+| [`script-style-educator`](skills/script-style-educator/SKILL.md) | The teach-one-thing video style: promise, 2 to 4 steps, proof, takeaway. Scars, not manuals |
+| [`script-style-storyteller`](skills/script-style-storyteller/SKILL.md) | The narrative-arc video style: cold open mid-action, tension beats, the turn, a plain landing |
+| [`script-style-contrarian`](skills/script-style-contrarian/SKILL.md) | The take-down-a-belief video style: steelman, crack it with receipts, reframe, Monday morning move |
+| [`script-style-operator`](skills/script-style-operator/SKILL.md) | The numbers-and-receipts video style: the metric, the mechanism, redoable math, the catch |
+| [`talking-head-notes`](skills/talking-head-notes/SKILL.md) | Shot sheets instead of scripts: one memorized hook, beat bullets with specifics, for founders who read wooden |
+| [`linkedin-carousel`](skills/linkedin-carousel/SKILL.md) | Cover slide as hook, one idea per slide, 8 to 12 slides, a payoff that is not a CTA, caption as mini post |
+| [`newsletter-style-operator-letter`](skills/newsletter-style-operator-letter/SKILL.md) | The weekly in-the-trenches letter: one cost-attached lesson, real numbers, the decision rule, one open loop |
+| [`newsletter-style-curator`](skills/newsletter-style-curator/SKILL.md) | Curation with a spine: 3 to 5 picks that argue one thesis, commentary the source does not say |
+| [`post-to-thread`](skills/post-to-thread/SKILL.md) | LinkedIn post to native X thread: tweet 1 obeys hook law and stands alone, one beat per tweet, recut not chopped |
 
 ### Demand: turn attention into pipeline
 
@@ -181,6 +227,8 @@ Agentic Executive Comms is built from these skills, grouped by the layer of the 
 | [`comment-strategy`](skills/comment-strategy/SKILL.md) | The daily listening loop: pull your sources, score against your ICP, get the 10 comments worth leaving today, drafted in your voice |
 | [`press-quotes`](skills/press-quotes/SKILL.md) | Get quoted by answering journalist source requests well: honest ROI gate, 15-minute daily triage, quote-first responses in your voice |
 | [`founder-pitch`](skills/founder-pitch/SKILL.md) | Earned media for founders: podcasts and newsletters first, six pitch angles from your real numbers, under 150 words, one follow-up max |
+| [`posting-cadence`](skills/posting-cadence/SKILL.md) | A cadence you can hold on your worst week, every slot mapped to a real material source. Misses skip, never backfill |
+| [`lead-magnet-cta`](skills/lead-magnet-cta/SKILL.md) | CTA discipline: the earn test, one funnel CTA per 4 to 5 posts, placed after the post lands, judged on conversions |
 
 Meta: [`skill-author`](skills/skill-author/SKILL.md) is the house standard every skill here is written against. Read it first if you want to contribute.
 
@@ -194,6 +242,10 @@ Meta: [`skill-author`](skills/skill-author/SKILL.md) is the house standard every
 - New skills carry `references/bakeoff.md`: the same input run without and with the skill, side by side, so you can judge the difference yourself.
 - Every gate supports exemptions in `my-story/anti-patterns.md`, so it never sands off a real voice.
 - Skills degrade gracefully: they work with an empty `my-story/` pack and tell you what filling it would improve.
+
+## System 2, early: Agentic Competitive Intelligence
+
+The systems claim is testable: a second system should compose from existing parts, not start over. It does. [`competitor-listening`](skills/competitor-listening/SKILL.md) watches competitors' public narrative and finds the open ground; it reuses [`outlier-analysis`](skills/outlier-analysis/SKILL.md) for why their content works, [`newsjacking`](skills/newsjacking/SKILL.md) for narrative windows, and the same `my-story/` pack for what YOU can credibly claim. Three skills, one shared context, a second workflow. That is the architecture doing its job.
 
 ## Future systems
 

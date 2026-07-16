@@ -1,0 +1,47 @@
+{
+  "cases": [
+    {
+      "name": "doctor --offline is healthy on this repo",
+      "script": "scripts/doctor.mjs",
+      "args": ["--offline"],
+      "env": { "AGENTIC_DOCTOR": "1" },
+      "expectExit": 0,
+      "expectContains": ["PASS node v", "PASS all", "DOCTOR: healthy"]
+    },
+    {
+      "name": "render-brief renders the demo content set to standalone HTML",
+      "script": "scripts/render-brief.mjs",
+      "args": ["$ROOT/examples/demo-content-set.md", "--stdout"],
+      "expectExit": 0,
+      "expectContains": ["<html", "</html>", "Content set: Demo founder call", "That is the trap."]
+    },
+    {
+      "name": "render-brief writes an output file with -o",
+      "script": "scripts/render-brief.mjs",
+      "args": ["$ROOT/examples/demo-content-set.md", "-o", "$TMP/out.html"],
+      "expectExit": 0,
+      "expectContains": ["Wrote"]
+    },
+    {
+      "name": "render-brief fails cleanly on a missing input file",
+      "script": "scripts/render-brief.mjs",
+      "args": ["$TMP/does-not-exist.md"],
+      "expectExit": 2,
+      "expectContains": ["Input not found"]
+    },
+    {
+      "name": "render-brief without arguments prints usage and exits nonzero",
+      "script": "scripts/render-brief.mjs",
+      "args": [],
+      "expectExit": 2,
+      "expectContains": ["Usage:"]
+    },
+    {
+      "name": "sync-readme --check passes after a fresh sync",
+      "script": "scripts/sync-readme.mjs",
+      "args": ["--check"],
+      "expectExit": 0,
+      "expectContains": ["up to date"]
+    }
+  ]
+}

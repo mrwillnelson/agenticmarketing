@@ -15,3 +15,4 @@ jobs:
           node-version: 22
       - run: node scripts/validate-skills.mjs
       - run: node scripts/run-evals.mjs
+      - run: node scripts/sync-readme.mjs --check

@@ -1,0 +1,35 @@
+name: Bug report
+description: A skill or script did the wrong thing.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill name
+      description: The skill or script involved, e.g. draft-qa or skills/anti-ai/scripts/scan.mjs.
+      placeholder: draft-qa
+    validations:
+      required: true
+  - type: textarea
+    id: asked
+    attributes:
+      label: What you asked
+      description: The exact message you gave your agent, or the exact command you ran. Strip anything private; never paste client data.
+      placeholder: "Check this draft before I post it: ..."
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: The actual output or error. Paste the relevant part verbatim.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: What the skill should have done instead, per its SKILL.md.
+    validations:
+      required: true

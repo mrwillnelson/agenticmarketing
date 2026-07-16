@@ -19,6 +19,9 @@ This repository is a library of agentic marketing systems. The first system, Age
 | Find patterns across many transcripts over time | `skills/cross-transcript-synthesis` |
 | Find clip-worthy timestamps in a recording | `skills/clip-finder` |
 | Analyze top posts from the user's niche | `skills/outlier-analysis` |
+| Decide what to capture this week for a starving pillar | `skills/pillar-gap-finder` |
+| Bank, resurface, or prune post ideas | `skills/idea-bank` |
+| Track competitors' narrative and find open ground | `skills/competitor-listening` |
 
 ## Narrative
 
@@ -26,11 +29,13 @@ This repository is a library of agentic marketing systems. The first system, Age
 |---|---|
 | Write a content brief before drafting | `skills/brief-writer` |
 | Turn one call into one post, same day | `skills/meeting-to-post` |
-| Write or fix an opening line | `skills/hooks` (product news: `skills/milestone-hooks`) |
+| Write or fix an opening line | `skills/hooks` (product news: `skills/milestone-hooks`; belief-change: `skills/thought-leadership-hooks`; personal story: `skills/story-hooks`; number-led: `skills/data-hooks`) |
 | Place keywords in a long-form article without taxing it | `skills/linkedin-article-keywords` |
 | Write a LinkedIn post | `skills/linkedin-post` |
-| Write a short-form video script | `skills/short-form-script` |
-| Write a newsletter issue | `skills/newsletter` |
+| Write a short-form video script | `skills/short-form-script` (styles: `script-style-educator`, `script-style-storyteller`, `script-style-contrarian`, `script-style-operator`; can't read a teleprompter: `skills/talking-head-notes`) |
+| Plan a LinkedIn carousel | `skills/linkedin-carousel` |
+| Write a newsletter issue | `skills/newsletter` (styles: `newsletter-style-operator-letter`, `newsletter-style-curator`) |
+| Turn a LinkedIn post into an X thread | `skills/post-to-thread` |
 | Adapt a proven post format to the user's story | `skills/format-remix` |
 | React to a trending story with the user's earned angle | `skills/newsjacking` |
 | Turn one recording into a full content set | `skills/one-recording-everything` |
@@ -46,6 +51,8 @@ This repository is a library of agentic marketing systems. The first system, Age
 | Turn post engagers into warm conversations | `skills/engagement-to-pipeline` |
 | Analyze what content performed | `skills/what-worked` |
 | Run the 90-day content teardown | `skills/content-audit` |
+| Set a sustainable posting cadence | `skills/posting-cadence` |
+| Decide which post carries the funnel CTA | `skills/lead-magnet-cta` |
 | Build today's comment queue from the user's listening sources | `skills/comment-strategy` |
 | Answer a journalist source request | `skills/press-quotes` |
 | Pitch the user's story to podcasts, newsletters, journalists | `skills/founder-pitch` |

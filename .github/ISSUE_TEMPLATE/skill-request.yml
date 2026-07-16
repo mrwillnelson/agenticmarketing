@@ -1,0 +1,41 @@
+name: Skill request
+description: Propose a marketing workflow you want made agentic.
+title: "[skill request] "
+labels: ["skill-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the workflow, not the skill. The best requests read like a job description for a task you already do by hand.
+  - type: textarea
+    id: workflow
+    attributes:
+      label: The workflow you want agentic
+      description: What repeatable marketing work should an agent run? Name the trigger, the steps, and the finish line.
+      placeholder: "Every Monday I turn last week's sales call objections into a FAQ update and one LinkedIn post..."
+    validations:
+      required: true
+  - type: textarea
+    id: manual-today
+    attributes:
+      label: What you do manually today
+      description: Walk through your current process, including the annoying parts. Where does it break down or get skipped?
+      placeholder: "I re-listen to calls at 2x, paste quotes into a doc, then..."
+    validations:
+      required: true
+  - type: textarea
+    id: inputs
+    attributes:
+      label: Inputs you have
+      description: What source material exists? Transcripts, exports, analytics, notes, feeds. Formats matter.
+      placeholder: "Granola transcripts, a LinkedIn analytics CSV, a folder of published posts..."
+    validations:
+      required: true
+  - type: textarea
+    id: good-output
+    attributes:
+      label: What good output looks like
+      description: Describe or paste an example of the result you would accept. If you have a real before/after, include it.
+      placeholder: "A ranked list of 5 objections, each with the verbatim quote and a suggested post angle..."
+    validations:
+      required: true

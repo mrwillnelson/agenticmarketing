@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- v1.1: 17 new skills (46 total): the hooks family (thought-leadership, story, data), four script styles plus talking-head shot sheets, LinkedIn carousels, two newsletter styles, post-to-thread, pillar-gap-finder, idea-bank, posting-cadence, lead-magnet-cta, and competitor-listening, the anchor of System 2 (Agentic Competitive Intelligence), which composes from existing skills and the shared pack.
+- Product experience: examples/demo-call.md for a zero-config first run, scripts/doctor.mjs one-command health check, scripts/render-brief.mjs self-contained HTML briefs, and a CI-enforced live scoreboard in the README (scripts/sync-readme.mjs).
+- Docs and community: CONCEPTS.md, CONFIGURATION.md, CONTRIBUTING.md, VERSIONS.md, docs/agents-for-marketers.md, docs/loops.md, issue and PR templates, a dependency map, and expanded install options.
+
 - Repositioned from a skills repo to an agentic marketing SYSTEMS library. Agentic Executive Comms is now framed as System 1 (the reference implementation); the README leads with the systems thesis, a skills-vs-systems distinction, the five-layer definition, and a future-systems roadmap. Skills stay flat; the change is conceptual. Footers, plugin manifests, and AGENTS updated to the new name and the open-source-vs-managed-layer framing.
 
 - Privacy pass: the my-story/ pack no longer ships 64stories' internal strategy. icp.md, pillars.md, narrative.md, and listening-sources.md are pure templates; only Will Nelson's public story remains (measured fingerprint, published posts, public engagement numbers). Retired "Story Engineering" from all teaching content. Added TOOLS.md, the real stack the skills run alongside.
