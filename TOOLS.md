@@ -15,6 +15,8 @@ the most common question, and the honest answer beats a category lecture.
 | Social signals and scraping | [Trigify](https://trigify.io) | Engagement and intent signals feed `engagement-to-pipeline` and `comment-strategy` |
 | API access | [RapidAPI](https://rapidapi.com) | Hosted APIs for platform data the free public endpoints do not cover |
 | Channels | LinkedIn first, plus other socials | Where everything ships; `platforms/` holds the per-channel constraints |
+| Motion direction | [Fable](https://www.fable.app) | Storyboards, motion references, and frozen visual exports feed `fable-hyperframes-launch-video` |
+| Video assembly | HyperFrames | Deterministic composition, captions, audio sync, QA, preview, and rendering for `fable-hyperframes-launch-video` |
 
 Two rules we hold about tools:
 

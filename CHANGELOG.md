@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added `fable-hyperframes-launch-video`, the first Agentic Launch Marketing skill, with a Fable motion-direction workflow, deterministic HyperFrames assembly, source-backed claims, asset provenance, and render QA.
+
 - Repositioned from a skills repo to an agentic marketing SYSTEMS library. Agentic Executive Comms is now framed as System 1 (the reference implementation); the README leads with the systems thesis, a skills-vs-systems distinction, the five-layer definition, and a future-systems roadmap. Skills stay flat; the change is conceptual. Footers, plugin manifests, and AGENTS updated to the new name and the open-source-vs-managed-layer framing.
 
 - Privacy pass: the my-story/ pack no longer ships 64stories' internal strategy. icp.md, pillars.md, narrative.md, and listening-sources.md are pure templates; only Will Nelson's public story remains (measured fingerprint, published posts, public engagement numbers). Retired "Story Engineering" from all teaching content. Added TOOLS.md, the real stack the skills run alongside.

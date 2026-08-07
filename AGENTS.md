@@ -30,6 +30,7 @@ This repository is a library of agentic marketing systems. The first system, Age
 | Place keywords in a long-form article without taxing it | `skills/linkedin-article-keywords` |
 | Write a LinkedIn post | `skills/linkedin-post` |
 | Write a short-form video script | `skills/short-form-script` |
+| Build a Fable + HyperFrames product launch video | `skills/fable-hyperframes-launch-video` |
 | Write a newsletter issue | `skills/newsletter` |
 | Adapt a proven post format to the user's story | `skills/format-remix` |
 | React to a trending story with the user's earned angle | `skills/newsjacking` |

@@ -124,6 +124,7 @@ Once installed, just tell your agent what you want. It picks the skill.
 | "Write a LinkedIn post from these notes" | `linkedin-post` |
 | "This hook sounds generic, fix it" | `hooks` |
 | "Find the clip-worthy moments in this recording" | `clip-finder` |
+| "Build a Fable + HyperFrames product launch video" | `fable-hyperframes-launch-video` |
 | "Which of my posts actually worked?" | `what-worked` |
 | "Score my LinkedIn connections against my ICP" | `connections-icp-match` |
 | "Check this draft before I post it" | `draft-qa` |
@@ -159,6 +160,7 @@ Agentic Executive Comms is built from these skills, grouped by the layer of the 
 | [`milestone-hooks`](skills/milestone-hooks/SKILL.md) | Product updates, launches, funding, hiring. Announcement without hype |
 | [`linkedin-post`](skills/linkedin-post/SKILL.md) | Fold-aware hook, mobile line-break rhythm, your natural length, no engagement bait, no fake punchline ending |
 | [`short-form-script`](skills/short-form-script/SKILL.md) | 15 to 90 second scripts: hook in 3 seconds, foreshadow, execution, payoff, hard cut |
+| [`fable-hyperframes-launch-video`](skills/fable-hyperframes-launch-video/SKILL.md) | Turns a launch brief, real product captures, and Fable motion direction into a deterministic, QA-checked HyperFrames video |
 | [`newsletter`](skills/newsletter/SKILL.md) | Subject and preview as a two-part hook, essay arc, your email register, reply-worthy ending |
 | [`format-remix`](skills/format-remix/SKILL.md) | Take a proven post's format, strip its content, inject your story. Format borrowed, voice and substance yours |
 | [`one-recording-everything`](skills/one-recording-everything/SKILL.md) | One recording becomes a post, clips, a newsletter section, and an article. Each native, all verbatim-grounded |
