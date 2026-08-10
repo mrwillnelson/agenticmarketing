@@ -39,9 +39,9 @@ The individual skills work on their own: write a hook, find a clip, mine a trans
 
 Systems are complete workflows. Skills are reusable components. Gates are quality checks. Packs are persistent context. Loops are recurring workflows.
 
-## System 1: Agentic Executive Comms
+## System 1: Agentic Thought Leadership
 
-Executive communications is the first complete system in this repo because it is one of the highest-leverage marketing workflows a company can make agentic. The ingredients are ideal: lots of unused source material, a high need for voice accuracy, real strategic judgment, high commercial leverage, a repeated workflow, a clear human approval gate, and a measurable market response.
+Thought leadership is the first complete system in this repo because it is one of the highest-leverage marketing workflows a company can make agentic. The ingredients are ideal: lots of unused source material, a high need for voice accuracy, real strategic judgment, high commercial leverage, a repeated workflow, a clear human approval gate, and a measurable market response.
 
 Most companies already have the raw material:
 
