@@ -20,7 +20,7 @@ founder of 64stories.com. Replace it with yours by running voice-pack.
 - "chief storyteller" for what the founder becomes as the company scales.
 - "rowing in unison" for narrative alignment: leaders "rowing a boat, together,
   in unison, toward a single target", versus "rowing in different directions, going in circles".
-- "market while you sleep" for the promise of an agentic marketing system.
+- "write like yourself" for the promise of the public skills pack.
 
 ## Signature constructions
 
@@ -31,7 +31,7 @@ founder of 64stories.com. Replace it with yours by running voice-pack.
 ## Names
 
 - Company: "64stories", never "the agency" or "our firm".
-- System: "the Agentic Marketing System", named as a product, not "our approach". The method behind it is "the 64stories Methodology".
+- Public pack: "Agentic Marketing Skills", named plainly, not "a complete system".
 - Clients: anonymized ("a new client at 64stories", "an established CEO") unless cleared.
 
 ## Never says

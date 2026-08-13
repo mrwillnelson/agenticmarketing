@@ -1,15 +1,33 @@
 # Agent map
 
-This repository is a library of agentic marketing systems. The first system, Agentic Executive Comms, is built from the skills below, organized by workflow layer: Listening (find the raw truth), Narrative (make it public language), and Demand (turn it into pipeline). A skill does one task; a system chains skills with shared context, quality gates, and human approval. Route by job:
+This repository is a public writing-and-voice skills pack. It helps one person find something true, write it in their voice, and check the draft before publishing.
+
+## Public repo bar
+
+A skill belongs in this public repo if it makes one person better at finding something true and writing it in their voice.
+
+A skill does not belong here if it:
+
+- scores people or accounts against an ICP
+- routes engagement into pipeline, CRM, or sales outreach
+- runs a daily listening or commenting queue
+- monitors competitors as a product
+- pitches journalists or podcasts as a service playbook
+- requires the 64stories CMS
+- explains how 64stories operates an account every week
+
+When in doubt, keep it internal.
+
+Cherry-picking later from older systems work is allowed only for writing flavors: extra hook types, script styles, carousel, newsletter variants, and post-to-thread. Do not restore competitor listening, posting cadence, idea-bank as an operations system, lead-magnet CTA as a funnel, doctor/demo setup, or community operations scaffolding.
 
 ## Setup
 
 | Job | Skill |
 |---|---|
-| Any writing task in this system | Load `skills/story-context` first |
+| Any writing task in this pack | Load `skills/story-context` first |
 | Set up or refresh the user's voice pack | `skills/voice-pack` |
 | Evolve the pack from the user's edits and performance | `skills/improve-my-pack` |
-| Write a new skill for this repo | `skills/skill-author` |
+| Write a new public writing skill | `skills/skill-author` |
 
 ## Listening
 
@@ -38,26 +56,21 @@ This repository is a library of agentic marketing systems. The first system, Age
 | Check a draft against the user's voice | `skills/voice-match` |
 | Final gate before publishing | `skills/draft-qa` |
 
-## Demand
+## Learn from your own posts
 
 | Job | Skill |
 |---|---|
-| Rank LinkedIn connections against the user's ICP | `skills/connections-icp-match` |
-| Turn post engagers into warm conversations | `skills/engagement-to-pipeline` |
 | Analyze what content performed | `skills/what-worked` |
 | Run the 90-day content teardown | `skills/content-audit` |
-| Build today's comment queue from the user's listening sources | `skills/comment-strategy` |
-| Answer a journalist source request | `skills/press-quotes` |
-| Pitch the user's story to podcasts, newsletters, journalists | `skills/founder-pitch` |
 
 ## The my-story pack
 
-`my-story/` holds the user's data: voice model, anti-patterns, lexicon, hooks, pillars, narrative, ICP, and approved examples. Skills read from it and say which files they use. When the pack is empty, skills still work but output is generic; suggest running `voice-pack` once.
+`my-story/` holds the user's data: voice model, anti-patterns, lexicon, hooks, pillars, narrative, audience, and approved examples. Skills read from it and say which files they use. When the pack is empty, skills still work but output is generic; suggest running `voice-pack` once.
 
 ## Tools
 
-`TOOLS.md` lists the stack these skills run alongside (capture, memory, tasks, CRM, signals). Skills stay tool-agnostic; suggest equivalents when the user names different tools.
+`TOOLS.md` is intentionally tool-agnostic. These skills accept pasted or exported material and do not require a specific CMS, CRM, or scraping stack.
 
 ## Platform modules
 
-`platforms/` holds shared constraints (LinkedIn fold, email subject and preview, X compression, video hook timing). Output skills reference these instead of restating them.
+`platforms/` holds shared constraints: LinkedIn fold, email subject and preview, X compression, video hook timing, and article structure. Output skills reference these instead of restating them.
