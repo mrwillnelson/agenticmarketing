@@ -2,17 +2,17 @@
 
 ## Unreleased
 
-- Repositioned from a skills repo to an agentic marketing SYSTEMS library. Agentic Executive Comms is now framed as System 1 (the reference implementation); the README leads with the systems thesis, a skills-vs-systems distinction, the five-layer definition, and a future-systems roadmap. Skills stay flat; the change is conceptual. Footers, plugin manifests, and AGENTS updated to the new name and the open-source-vs-managed-layer framing.
+- Narrowed the public repo back to a writing-and-voice skills pack. The README, AGENTS map, plugin metadata, and standard footers now describe Agentic Marketing Skills instead of a complete GTM system.
+- Removed public GTM-loop and service-playbook skills: `connections-icp-match`, `engagement-to-pipeline`, `comment-strategy`, `press-quotes`, and `founder-pitch`.
+- Added PolyForm Noncommercial 1.0.0 licensing plus a plain-English NOTICE so the public terms match the intended use: learn from the pack, use it for your own company, do not sell a competing service with it.
+- Recorded the public repo bar for future agents: keep writing craft public, keep scoring, routing, account operations, CMS workflows, competitor monitoring, and service playbooks internal.
+- The v1.1 systems PR is not merging into main.
 
-- Privacy pass: the my-story/ pack no longer ships 64stories' internal strategy. icp.md, pillars.md, narrative.md, and listening-sources.md are pure templates; only Will Nelson's public story remains (measured fingerprint, published posts, public engagement numbers). Retired "Story Engineering" from all teaching content. Added TOOLS.md, the real stack the skills run alongside.
-
-- Four earned-attention skills: newsjacking, press-quotes, founder-pitch, comment-strategy (29 total), each with a bake-off, plus two new tested pull scripts (trends and listening sources) and a `my-story/listening-sources.md` template.
-- Repo pointers updated: built by Will Nelson, founder of 64stories.com; narrative intelligence via the TalkStories plugin at talkstories.ai; executive communications and GTM via 64stories.com.
-
-- Eight new skills: content-audit, brief-writer, outlier-analysis, engagement-to-pipeline, linkedin-article-keywords, improve-my-pack, cross-transcript-synthesis, meeting-to-post (25 total).
+- Privacy pass: the my-story/ pack no longer ships 64stories' internal strategy. icp.md, pillars.md, narrative.md, and listening-sources.md are pure templates; only Will Nelson's public story remains (measured fingerprint, published posts, public engagement numbers). Retired "Story Engineering" from all teaching content. Added TOOLS.md.
+- Eight writing and learning skills: content-audit, brief-writer, outlier-analysis, linkedin-article-keywords, improve-my-pack, cross-transcript-synthesis, meeting-to-post, and newsjacking.
 - Real receipts: flagship skills carry `references/receipts.md` with Will Nelson's real published posts and engagement numbers; the `my-story/` worked example is now his real measured pack.
 - Bake-offs: every new skill ships `references/bakeoff.md` showing baseline vs with-skill output on the same input.
-- Quickstart: "Try it in five minutes" README path; `one-recording-everything` now delivers one artifact defined by an output template.
-- Initial library: 17 skills across Listening, Narrative, and Demand, plus the `my-story/` template pack, `platforms/` constraint modules, and plugin packaging.
-- Seven tested deterministic scripts: anti-AI scanner with voice exemptions, voice fingerprint measurer, transcript timestamp parser, LinkedIn connections parser, format overlap checker, hook fold checker, performance weights calculator.
+- Quickstart: "Try it in five minutes" README path; `one-recording-everything` delivers one artifact defined by an output template.
+- Initial library: writing skills across Listening, Narrative, and Learn from your own posts, plus the `my-story/` template pack, `platforms/` constraint modules, and plugin packaging.
+- Tested deterministic scripts: anti-AI scanner with voice exemptions, voice fingerprint measurer, transcript timestamp parser, format overlap checker, hook fold checker, and performance weights calculator.
 - Eval harness: script-bearing skills carry `evals/evals.json`, executed by `scripts/run-evals.mjs` in CI.

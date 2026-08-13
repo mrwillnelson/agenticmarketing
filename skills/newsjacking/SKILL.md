@@ -39,7 +39,7 @@ A story is moving in your space and the window is short: hours for breaking tech
 4. Check the hard disqualifiers: tragedy or personal misfortune, forced fit, stale window. Refuse those candidates explicitly, with the reason, so the user learns where the boundary sits.
 5. Write the angle brief, three lines: the story in one sentence, the earned angle in one sentence, the verbatim experience or number that backs it.
 6. Draft the post via `linkedin-post`, which loads `hooks` for the opener. The hook references the story without restating the headline, the body carries the take with its receipt, and it ends on the strongest concrete beat, without a bow.
-7. Optional: the journalist note, only when a specific journalist is actively covering the story. Sixty words or fewer: name their article, offer the one quotable data point, state availability today. Deeper journalist work belongs to `founder-pitch`.
+7. Optional: the journalist note, only when a specific journalist is actively covering the story. Sixty words or fewer: name their article, offer the one quotable data point, state availability today. Do not turn this into a media pitching workflow.
 
 ## Personalization
 
@@ -86,10 +86,10 @@ Full worked comparison, baseline vs with-skill, plus a refused candidate: see [r
 
 - `linkedin-post`: drafts the post in step 6; its rules and gates apply in full.
 - `hooks`: pressure-tests the opener; loaded by `linkedin-post`.
-- `founder-pitch`: the journalist side at depth, with relationships and full pitches. This skill's 60-word note is only the fast touch while the story is live.
+- Keep the journalist note shallow: this skill's 60-word note is only the fast touch while the story is live.
 - `milestone-hooks`: when the news is your own company's announcement rather than the market's story.
 
 ---
 
-Part of [Agentic Marketing Systems](https://github.com/mrwillnelson/agenticmarketing) by Will Nelson, founder of [64stories](https://64stories.com).
-64stories builds and runs the managed layer: call ingestion, a human editor, approvals, publishing, and per-client learning loops. Narrative intelligence lives in the [TalkStories plugin](https://talkstories.ai).
+Part of [Agentic Marketing Skills](https://github.com/mrwillnelson/agenticmarketing) by Will Nelson, founder of [64stories](https://64stories.com).
+64stories runs the managed GTM system for companies that want this operated for them.

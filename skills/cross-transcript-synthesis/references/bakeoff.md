@@ -59,7 +59,7 @@ Why the baseline misses: each summary is accurate and each would pass review. Bu
 
 ## Demand signals
 
-- The revenue attribution question, asked by a different person every time: "how does that tie to pipeline?" (prospect call, 2026-01-14); "how do you actually connect any of this to revenue?" (podcast, 2026-02-19); "Clients will still ask how it reaches pipeline." (internal strategy, 2026-03-26). Three calls, three audiences. The engagement-to-pipeline bridge is the most demanded topic in the corpus.
+- The revenue attribution question, asked by a different person every time: "how does that tie to pipeline?" (prospect call, 2026-01-14); "how do you actually connect any of this to revenue?" (podcast, 2026-02-19); "Clients will still ask how it reaches pipeline." (internal strategy, 2026-03-26). Three calls, three audiences. The revenue bridge is the most demanded topic in the corpus.
 
 ## Proof ledger
 
