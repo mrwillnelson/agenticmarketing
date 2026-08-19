@@ -1,4 +1,4 @@
-# Agentic Marketing Systems
+# Content-Skills
 
 Open-source systems for turning repeatable marketing workflows into agentic workflows.
 
