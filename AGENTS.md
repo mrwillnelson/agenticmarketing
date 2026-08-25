@@ -1,6 +1,6 @@
 # Agent map
 
-This repository is a library of agentic marketing systems. The first system, Agentic Executive Comms, is built from the skills below, organized by workflow layer: Listening (find the raw truth), Narrative (make it public language), and Demand (turn it into pipeline). A skill does one task; a system chains skills with shared context, quality gates, and human approval. Route by job:
+This repository is a library of agentic marketing systems. The first system, Agentic Executive Comms, is built from the skills below, organized by workflow layer: Listening (find the raw truth), Decision (choose what deserves to be said), Narrative (make it public language), and Demand (turn it into pipeline). A skill does one task; a system chains skills with shared context, quality gates, and human approval. Route by job:
 
 ## Setup
 
@@ -19,6 +19,14 @@ This repository is a library of agentic marketing systems. The first system, Age
 | Find patterns across many transcripts over time | `skills/cross-transcript-synthesis` |
 | Find clip-worthy timestamps in a recording | `skills/clip-finder` |
 | Analyze top posts from the user's niche | `skills/outlier-analysis` |
+
+## Decision
+
+| Job | Skill |
+|---|---|
+| Decide what the company should say next from customer, company, market, search, and performance signals | `skills/what-to-say` |
+
+`what-to-say` owns the editorial decision before a piece exists. Listening skills feed it evidence. `brief-writer` consumes its approved decision and turns that decision into a drafting assignment.
 
 ## Narrative
 
