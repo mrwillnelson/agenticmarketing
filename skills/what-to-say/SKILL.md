@@ -16,45 +16,52 @@ Make the editorial decision before content creation starts. Turn messy signals i
 5. Use exactly four evidence statuses: `FACT`, `INFERENCE`, `HYPOTHESIS`, `UNKNOWN`. Never silently promote one into another.
 6. Search is evidence, not an instruction. A high-volume term can still be a bad message. Missing search data stays `UNKNOWN`; never invent volume, ranking, or demand.
 7. Buyer interest and company authority must both exist. A topic buyers care about but the company has nothing credible to add is weak. A company belief buyers do not care about is also weak.
-8. Format comes after the message. Do not choose a post, article, customer story, launch, or video first and then reverse-engineer a reason for it.
-9. Refusal is a valid result. When the evidence is too thin or contradictory, say `No strong What to Say decision yet.` and name the smallest evidence needed next.
-10. Do not reward novelty for its own sake. The best decision may be a familiar issue with unusually strong evidence, timing, or authority.
+8. Company authority and messenger fit are separate gates. A message can be right for the company and wrong for the proposed executive. Redirect it rather than forcing the wrong speaker.
+9. Novelty is independent of source quality. Strong evidence for a story already told does not make it a fresh message. Check recent coverage when available.
+10. Permission is independent of truth. A fact can be true and still be unusable publicly. Mark client, employee, partner, and confidential evidence accordingly.
+11. Format comes after the message. Do not choose a post, article, customer story, launch, or video first and then reverse-engineer a reason for it.
+12. Refusal is a valid result. When the evidence is too thin or contradictory, say `No strong What to Say decision yet.` and name the smallest evidence needed next.
+13. Do not reward novelty for its own sake. The best decision may be a familiar issue with unusually strong evidence, timing, authority, or proof.
 
 ## Modes
 
 Use the mode the request implies. If none is explicit, use `decide`.
 
 - `decide`: choose the strongest message from the evidence.
-- `compare`: compare two or more proposed messages against the evidence and choose one, refine one, or reject all.
-- `pressure-test`: test one existing message or content direction. Return `KEEP`, `REFINE`, `DROP`, or `UNKNOWN` with reasons.
+- `compare`: compare two or more proposed messages against the evidence and choose one, refine one, redirect one, or reject all.
+- `pressure-test`: test one existing message or content direction. Return `KEEP`, `REFINE`, `DROP`, `REDIRECT`, or `UNKNOWN` with reasons.
 - `gaps`: identify what evidence is missing before a responsible decision can be made. Do not force a recommendation.
 - `test`: dogfood this skill without contaminating the control. Read [references/test-protocol.md](references/test-protocol.md) and follow it exactly.
 
 ## Procedure
 
 1. Clarify the decision question. Default to: `What should this company say next to the audience represented by the evidence?`
-2. Read the supplied sources in full. Typical inputs include customer calls, sales objections, support questions, internal discussions, executive notes, product changes, competitor activity, search queries, community discussion, and performance data.
-3. Read the relevant `my-story/` files listed under Personalization. Treat them as context, not evidence that overrides current signals.
-4. Build an evidence ledger with stable IDs: `E001`, `E002`, and so on. For each item record source, signal class, status, observation, and implication.
-5. Separate observation from interpretation. A repeated customer phrase is an observation. What it means for positioning is an inference until supported.
-6. Find the tensions that matter. Look for repeated pain, unresolved questions, changing behavior, objections, surprising language, market movement, search intent, performance patterns, and places where the company has unusual authority.
-7. Form 2 to 5 candidate messages internally. Do not expose a brainstorm dump unless the user asked to compare candidates.
-8. Evaluate the candidates on five dimensions: buyer pull, company right-to-say, why-now timing, available proof, and distinctiveness. Use the evidence, not aesthetic preference.
-9. Choose one primary decision. If no candidate clears the bar, return the refusal in hard rule 9.
-10. Write the What to Say Brief using [references/brief-contract.md](references/brief-contract.md). Read that reference whenever producing a final brief.
-11. Stop at the creation handoff. If the user wants a specific piece commissioned next, hand the decision to `brief-writer` rather than drafting from this skill.
+2. Resolve the proposed speaker when one exists. If none is given, keep speaker as `UNKNOWN` until the evidence suggests the right messenger.
+3. Read the supplied sources in full. Typical inputs include customer calls, sales objections, support questions, internal discussions, executive notes, product changes, competitor activity, search queries, community discussion, and performance data.
+4. Read the relevant `my-story/` files listed under Personalization. Treat them as context, not evidence that overrides current signals.
+5. Build an evidence ledger with stable IDs: `E001`, `E002`, and so on. For each item record source, signal class, status, observation, implication, and permission state when relevant.
+6. Separate observation from interpretation. A repeated customer phrase is an observation. What it means for positioning is an inference until supported.
+7. Find the tensions that matter. Look for repeated pain, unresolved questions, changing behavior, objections, surprising language, market movement, search intent, performance patterns, and places where the company has unusual authority.
+8. Form 2 to 5 candidate messages internally. Do not expose a brainstorm dump unless the user asked to compare candidates.
+9. Evaluate the candidates on eight dimensions: buyer pull, company right-to-say, messenger fit, why-now timing, proof completeness, distinctiveness, novelty/coverage, and permission safety. Use the evidence, not aesthetic preference.
+10. Choose one primary decision. If the message is strong but the proposed speaker is wrong, `REDIRECT`. If the message is strong but proof or permission is missing, `DEFER`. If no candidate clears the bar, return the refusal in hard rule 12.
+11. Write the What to Say Brief using [references/brief-contract.md](references/brief-contract.md). Read that reference whenever producing a final brief.
+12. Stop at the creation handoff. If the user wants a specific piece commissioned next, hand the decision to `brief-writer` rather than drafting from this skill.
 
 ## Decision standard
 
-A strong message has all five:
+A strong message survives all eight checks:
 
 - **Buyer pull:** evidence that the audience has the problem, question, desire, or decision.
-- **Right to say:** a credible reason this company can say something useful or distinctive about it.
+- **Company right to say:** a credible reason this company can say something useful or distinctive about it.
+- **Messenger fit:** the proposed speaker has enough experience, role, or personal stake to carry the message credibly.
 - **Why now:** a timing reason, even if the reason is a repeated current customer pattern rather than news.
-- **Proof:** facts, examples, product evidence, customer language, or operating experience that can carry the claim.
+- **Proof completeness:** facts, examples, product evidence, customer language, or operating experience can carry the claim without writing around missing pieces.
 - **Distinctiveness:** a point of view or evidence pattern that is more specific than category boilerplate.
+- **Novelty / coverage:** the message is not merely a repeat of something the same speaker already published unless the new evidence materially changes it.
+- **Permission safety:** the evidence needed to make the message land can be used publicly, or the brief clearly marks what must be anonymized or approved.
 
-Do not average away a fatal weakness. A candidate with strong search demand and no right to say can still lose.
+Do not average away a fatal weakness. Strong search demand cannot rescue weak authority. Strong evidence cannot rescue a wrong messenger. A true client fact cannot rescue missing permission.
 
 ## Personalization
 
@@ -66,7 +73,7 @@ Read these when present:
 - `my-story/listening-sources.md`: where recurring signals normally come from and how fresh they are.
 - `my-story/lexicon.md`: exact language the author or audience consistently uses.
 
-With an empty pack, run from the provided evidence. State the audience assumptions you had to make. Do not lower the evidence standard just because the pack is empty. Suggest filling `icp.md` and `listening-sources.md` if repeated runs are too generic.
+With an empty pack, run from the provided evidence. State the audience and speaker assumptions you had to make. Do not lower the evidence standard just because the pack is empty. Suggest filling `icp.md` and `listening-sources.md` if repeated runs are too generic.
 
 ## Examples
 
@@ -82,12 +89,17 @@ Bad: `Privacy content caused pipeline because our three top posts mentioned priv
 Better: `FACT: the three top-performing posts mentioned privacy. HYPOTHESIS: privacy may be contributing to resonance. UNKNOWN: whether privacy caused pipeline. Pressure-test privacy as a direction, but do not make the causal claim.`
 Why: performance correlation is evidence; causality requires more.
 
+Bad: `This is a great company story, so the Head of Marketing should post it.`
+Better: `The underlying message is strong for the company, but the evidence comes from the founder's operating experience. REDIRECT the message to the founder unless the Head of Marketing has their own first-hand proof.`
+Why: company fit and messenger fit are different decisions.
+
 ## Self-check
 
 - Did I make one decision rather than hide behind a list of ideas?
 - Can every important recommendation be traced to evidence IDs?
 - Did I keep fact, inference, hypothesis, and unknown separate?
-- Did I test both buyer pull and the company's right to say it?
+- Did I test buyer pull, company authority, and messenger fit separately?
+- Did I check novelty and permission instead of assuming truthful evidence is publishable and fresh?
 - Did search influence the decision without controlling it?
 - Did I choose the message before the format?
 - If the evidence is weak, did I refuse instead of filling gaps with plausible content strategy?
