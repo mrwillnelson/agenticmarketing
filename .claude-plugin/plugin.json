@@ -1,10 +1,9 @@
 {
   "name": "agentic-marketing-skills",
-  "description": "Agentic marketing systems: reusable skills for listening, deciding what to say, creating content, quality gates, and demand workflows. Includes the What to Say editorial decision skill and Agentic Executive Comms system.",
-  "version": "0.2.1",
+  "description": "Agentic marketing systems: reusable skills, context packs, quality gates, and loops for making marketing workflows agentic. First system: Agentic Executive Comms.",
+  "version": "0.1.0",
   "author": {
     "name": "64stories",
     "url": "https://64stories.com"
-  },
-  "skills": "./skills/"
+  }
 }
