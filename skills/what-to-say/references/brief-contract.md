@@ -10,7 +10,14 @@ Write one sentence:
 
 `The company should say: [core message]. [E###]`
 
-If the evidence does not support a strong decision, write:
+Then assign one decision state:
+
+- `SHIP` — strong enough to pursue now.
+- `DEFER` — direction is strong but required proof, permission, timing, or inputs are not ready.
+- `REDIRECT` — underlying signal is useful but the proposed company, speaker, or framing is wrong.
+- `KILL` — do not pursue this message.
+
+If the evidence does not support a strong direction, write:
 
 `No strong What to Say decision yet.`
 
@@ -52,15 +59,20 @@ Name what the evidence actually shows. Do not substitute a generic ICP descripti
 
 ## Candidate check
 
-Show the winning direction against the five decision dimensions.
+Show the winning direction against all eight decision dimensions.
 
 | Dimension | Assessment | Evidence |
 |---|---|---|
 | Buyer pull | strong / mixed / weak / unknown | E### |
-| Right to say | strong / mixed / weak / unknown | E### |
+| Company right to say | strong / mixed / weak / unknown | E### |
+| Messenger fit | strong / mixed / weak / unknown | E### |
 | Why now | strong / mixed / weak / unknown | E### |
-| Proof | strong / mixed / weak / unknown | E### |
+| Proof completeness | strong / mixed / weak / unknown | E### |
 | Distinctiveness | strong / mixed / weak / unknown | E### |
+| Novelty / coverage | strong / mixed / weak / unknown | E### |
+| Permission safety | strong / mixed / weak / unknown | E### |
+
+Do not average away a fatal weakness. A message with strong buyer pull can still fail because the speaker is wrong, the proof is incomplete, the idea is already exhausted, or the evidence cannot be used publicly.
 
 If a losing candidate was close, name it in one line and say which dimension caused it to lose.
 
@@ -68,9 +80,9 @@ If a losing candidate was close, name it in one line and say which dimension cau
 
 Use one row per meaningful signal.
 
-| ID | Class | Status | Source | Observation | Implication |
-|---|---|---|---|---|---|
-| E001 | customer | FACT | customer call | ... | ... |
+| ID | Class | Status | Permission | Source | Observation | Implication |
+|---|---|---|---|---|---|---|
+| E001 | customer | FACT | public / approved / restricted / unknown | customer call | ... | ... |
 
 Allowed classes:
 
@@ -86,6 +98,13 @@ Allowed statuses:
 - `INFERENCE`
 - `HYPOTHESIS`
 - `UNKNOWN`
+
+Permission states are descriptive, not a substitute for legal review:
+
+- `public` — already public in the supplied evidence.
+- `approved` — user/source explicitly says it may be used.
+- `restricted` — supplied evidence says it should not be used publicly.
+- `unknown` — no permission information is present.
 
 Keep observation and implication separate. If a source supports only the observation, do not write the implication as fact.
 
@@ -119,6 +138,8 @@ Include:
 
 The format is downstream of the message.
 
+If messenger fit is weak, name the better messenger or leave the speaker `UNKNOWN` rather than forcing the requested person.
+
 ## What not to claim
 
 List statements the company should avoid because they are:
@@ -128,6 +149,8 @@ List statements the company should avoid because they are:
 - causally unproven
 - generic enough that any competitor could say them
 - dependent on missing evidence
+- assigned to the wrong messenger
+- confidential, unapproved, or otherwise not established as publishable
 
 This section is mandatory.
 
@@ -140,6 +163,8 @@ For each:
 - what is unknown
 - why it matters
 - smallest way to resolve it
+
+Prioritize novelty, permission, proof, buyer evidence, and messenger evidence when one of those could reverse the decision.
 
 Do not fill the section with nice-to-have research.
 
@@ -160,20 +185,31 @@ Delete this section when the alternatives are weak.
 End with:
 
 ```yaml
+decision_state:
 message:
 audience:
 speaker:
 format:
 proof_required:
+permission_required:
 forbidden_claims:
 search_language:
+novelty_check:
 unknowns:
 ```
 
-Default final line:
+Default final line for `SHIP`:
 
 `Decision made. Brief ready for creation.`
 
-If the decision was refused, replace it with:
+For `DEFER`:
 
 `Decision deferred. Gather the named evidence before creation.`
+
+For `REDIRECT`:
+
+`Direction retained. Change the messenger or framing before creation.`
+
+For `KILL`:
+
+`Decision closed. Do not create from this direction.`
